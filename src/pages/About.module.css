@@ -1,0 +1,326 @@
+.aboutPage {
+  padding-top: 96px;
+}
+
+/* ── Page Header with Background Image ── */
+.pageHeader {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.pageHeaderBg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 0.6s ease;
+}
+
+.pageHeader:hover .pageHeaderBg {
+  transform: scale(1.0);
+}
+
+.pageHeaderOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 74, 54, 0.82) 0%,
+    rgba(6, 40, 28, 0.75) 100%
+  );
+}
+
+.pageHeaderContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.pageHeaderContent h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white !important;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.pageHeaderContent p {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Intro ── */
+.introGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.introText h2 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+}
+
+.introText p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.registration {
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: var(--bg-gray);
+  border-left: 4px solid var(--secondary-color);
+  font-size: 1.05rem;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px 10px;
+  background: var(--bg-gray);
+  border-radius: 8px;
+  border-top: 3px solid var(--primary-color);
+}
+
+.stat span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.stat small {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.introImage img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+  max-height: 480px;
+}
+
+/* ── Mission & Vision ── */
+.mvGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.mvCard {
+  background-color: var(--bg-main);
+  padding: 50px 40px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--primary-color);
+}
+
+.mvIcon {
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.mvCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.mvCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mvCard li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1.05rem;
+  color: var(--text-light);
+}
+
+.mvCard li svg { margin-top: 4px; flex-shrink: 0; }
+
+.mvSummary {
+  font-weight: 600;
+  color: var(--primary-color) !important;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.mvCard p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+/* ── Commitments ── */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionHeader h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+
+.sectionHeader p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+}
+
+.commitmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.commitmentCard {
+  text-align: center;
+  padding: 36px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.commitmentCard:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.commitmentCard svg { margin-bottom: 20px; }
+
+.commitmentCard h4 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.commitmentCard p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ── Certifications ── */
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.certCard {
+  background-color: rgba(255,255,255,0.05);
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all var(--transition-fast);
+}
+
+.certCard:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-color: var(--secondary-color);
+}
+
+.certCard svg { margin-bottom: 16px; }
+
+.certCard h4 {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.certCard p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ── Clients ── */
+.clientsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.clientBadge {
+  padding: 14px 28px;
+  background-color: var(--bg-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  color: var(--text-main);
+}
+
+.clientBadge:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 992px) {
+  .introGrid, .mvGrid {
+    grid-template-columns: 1fr;
+  }
+  .commitmentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .certGrid {
+    grid-template-columns: 1fr;
+  }
+  .pageHeaderContent h1 {
+    font-size: 2.2rem;
+  }
+  .pageHeader {
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .commitmentsGrid {
+    grid-template-columns: 1fr;
+  }
+}

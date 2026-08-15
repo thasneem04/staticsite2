@@ -1,0 +1,10 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(10, 10)">
+    <!-- Hexagon outline for logo -->
+    <polygon points="20,0 40,0 50,17 40,34 20,34 10,17" fill="none" stroke="#0b4a36" stroke-width="2.5" />
+    <path d="M 30,5 L 20,25 L 40,25 Z" fill="none" stroke="#c11f24" stroke-width="2" />
+    <path d="M 15,30 L 45,30" stroke="#0b4a36" stroke-width="2" />
+    <text x="60" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0b4a36">AUTO-CONTROL</text>
+    <text x="60" y="34" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#4b5563">SYNERGY SERVICES</text>
+  </g>
+</svg>
