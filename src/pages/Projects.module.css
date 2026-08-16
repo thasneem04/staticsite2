@@ -1,11 +1,12 @@
 .projectsPage {
-  padding-top: 96px;
+  /* Starts flush from top edge behind header */
 }
 
 /* ── Page Header with Background Image ── */
 .pageHeader {
   position: relative;
-  height: 380px;
+  height: 420px;
+  padding-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;

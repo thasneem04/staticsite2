@@ -82,9 +82,10 @@ const Projects = () => {
       </div>
 
       {/* Projects Showcase */}
-      <section className="section">
+      <section className="section-lg">
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>PROVEN TRACK RECORD</h4>
             <h2 className="text-primary">Notable Projects</h2>
             <p>ACS has a proven track record of successfully completing numerous large-scale and complex projects for Saudi Arabia's most prestigious clients.</p>
           </div>
@@ -110,8 +111,8 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className={styles.projectsGrid}>
-            {projects.map(project => (
-              <div key={project.id} className={styles.projectCard}>
+            {projects.map((project, index) => (
+              <div key={project.id} className={`${styles.projectCard} animate-fade-up`} style={{ animationDelay: `${index * 100}ms` }}>
                 <div className={styles.projectMeta}>
                   <span className={styles.projectScope}>{project.scope}</span>
                   <span className={styles.projectLocation}><MapPin size={14} /> {project.location}</span>
@@ -126,9 +127,10 @@ const Projects = () => {
       </section>
 
       {/* Panel Solutions */}
-      <section className="section section-dark">
+      <section className="section-lg section-dark">
         <div className={`container ${styles.panelsGrid}`}>
-          <div className={styles.panelsText}>
+          <div className={`${styles.panelsText} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>MANUFACTURING</h4>
             <h2>Our Panel Solutions</h2>
             <p>
               ACS manufactures and assembles a comprehensive range of custom control panels and cabinets at our state-of-the-art facility in Dammam's 2nd Industrial City. Every panel is built to client specifications, engineered to international standards, and fully tested before delivery.

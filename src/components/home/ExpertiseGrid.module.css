@@ -1,0 +1,119 @@
+.expertiseSection {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sectionHeader {
+  margin-bottom: 50px;
+}
+
+.sectionHeader h2 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.sectionHeader p {
+  color: var(--text-light);
+  max-width: 600px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(6, 40, 28, 0.95), transparent);
+}
+
+.overlayText strong {
+  display: block;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.overlayText span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gridWrapper {
+  padding-left: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-color: var(--bg-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all var(--transition-fast);
+}
+
+.gridItem:hover {
+  background-color: white;
+  border-color: var(--secondary-color);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.itemIcon {
+  color: var(--secondary-color);
+  background-color: rgba(193, 31, 36, 0.1);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.itemName {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+  .gridWrapper {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

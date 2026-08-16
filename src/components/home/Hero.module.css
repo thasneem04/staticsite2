@@ -1,0 +1,252 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero_grand.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  animation: subtleZoom 20s infinite alternate linear;
+  z-index: 0;
+}
+
+@keyframes subtleZoom {
+  0% { transform: scale(1.02); }
+  100% { transform: scale(1.08); }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg, 
+    rgba(6, 40, 28, 0.95) 0%, 
+    rgba(11, 74, 54, 0.8) 50%,
+    rgba(11, 74, 54, 0.3) 100%
+  );
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.textContent {
+  max-width: 860px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: rgba(193, 31, 36, 0.95); /* Brand Red */
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(193, 31, 36, 0.3);
+}
+
+.textContent h1 {
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 24px;
+}
+
+.heroDesc {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.25rem !important;
+  max-width: 650px;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.heroBtns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.primaryBtn, .secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all var(--transition-normal);
+}
+
+.primaryBtn {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: 0 4px 15px rgba(193, 31, 36, 0.4);
+}
+
+.primaryBtn:hover {
+  background-color: var(--secondary-color-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(193, 31, 36, 0.5);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.secondaryBtn:hover {
+  background-color: white;
+  color: var(--primary-color-dark);
+  transform: translateY(-3px);
+}
+
+/* Grand Trust Metrics Ribbon */
+.metricsRibbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(6, 40, 28, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 20px 32px;
+  max-width: 960px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.metricItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.metricIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(193, 31, 36, 0.2);
+  color: var(--secondary-color, #c11f24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metricText {
+  display: flex;
+  flex-direction: column;
+}
+
+.metricText strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.metricText span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metricDivider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mouse {
+  width: 26px;
+  height: 44px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  position: relative;
+}
+
+.wheel {
+  width: 3px;
+  height: 7px;
+  background-color: white;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  100% { transform: translate(-50%, 15px); opacity: 0; }
+}
+
+@media (max-width: 900px) {
+  .metricsRibbon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+  .metricDivider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 750px;
+    height: auto;
+    padding: 120px 0 60px;
+  }
+  .heroOverlay {
+    background: linear-gradient(
+      180deg, 
+      rgba(6, 40, 28, 0.75) 0%, 
+      rgba(11, 74, 54, 0.98) 100%
+    );
+  }
+  .heroDesc {
+    font-size: 1.1rem !important;
+  }
+  .heroBtns {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+  }
+}
+

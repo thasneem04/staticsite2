@@ -15,11 +15,12 @@ const Contact = () => {
         </div>
       </div>
 
-      <section className="section">
+      <section className="section-lg">
         <div className={`container ${styles.contactGrid}`}>
           {/* Contact Info */}
-          <div className={styles.contactInfo}>
+          <div className={`${styles.contactInfo} animate-fade-up`}>
             <div className={styles.infoHeader}>
+              <h4 className="text-secondary" style={{ letterSpacing: '2px', marginBottom: '12px' }}>LET'S TALK</h4>
               <h2 className="text-primary">Contact Information</h2>
               <p>Reach out to us for project inquiries, technical support, or partnership opportunities.</p>
             </div>
@@ -77,7 +78,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className={styles.formContainer}>
+          <div className={`${styles.formContainer} animate-fade-up delay-200`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px', marginBottom: '12px' }}>REQUEST A QUOTE</h4>
             <h3>Send us a Message</h3>
             <p className={styles.formSubtitle}>Fill out the form below and our team will get back to you promptly.</p>
             

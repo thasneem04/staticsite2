@@ -70,10 +70,11 @@ const Services = () => {
       </div>
 
       {/* Intro + Services List */}
-      <section className="section">
+      <section className="section-lg">
         <div className="container">
           <div className={styles.introGrid}>
-            <div className={styles.introText}>
+            <div className={`${styles.introText} animate-fade-up`}>
+              <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>OUR EXPERTISE</h4>
               <h2 className="text-primary">PLC Automation & Control Systems</h2>
               <p>
                 ACS designs, builds, and delivers smart automation solutions that improve operational efficiency, ensure reliability, and drive digital transformation across industries. Our engineering team brings deep expertise in PLC programming, system integration, and panel fabrication.
@@ -84,7 +85,7 @@ const Services = () => {
               <img src="/images/services.jpg" alt="PLC Automation Panel" className={styles.introImage} />
             </div>
 
-            <div className={styles.servicesList}>
+            <div className={`${styles.servicesList} animate-fade-up delay-200`}>
               {coreServices.map(service => (
                 <div key={service.id} className={styles.serviceItem}>
                   <div className={styles.serviceIconWrapper}>{service.icon}</div>
@@ -100,13 +101,14 @@ const Services = () => {
       </section>
 
       {/* Panel Manufacturing */}
-      <section className="section section-light">
+      <section className="section-lg section-light">
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>ENGINEERED SOLUTIONS</h4>
             <h2>Panel Manufacturing & Fabrication</h2>
             <p>Built in our state-of-the-art Dammam facility to international standards.</p>
           </div>
-          <div className={styles.panelGrid}>
+          <div className={`${styles.panelGrid} animate-fade-up delay-200`}>
             {panelTypes.map((p, idx) => (
               <div key={idx} className={styles.panelCard}>
                 <h4>{p.name}</h4>
@@ -118,14 +120,15 @@ const Services = () => {
       </section>
 
       {/* Electrical & Instrumentation */}
-      <section className="section">
+      <section className="section-lg">
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>COMPREHENSIVE EXPERTISE</h4>
             <h2>Electrical & Instrumentation</h2>
             <p>Comprehensive E&I solutions tailored to meet our clients' most demanding project requirements.</p>
           </div>
 
-          <div className={styles.eiGrid}>
+          <div className={`${styles.eiGrid} animate-fade-up delay-200`}>
             <div className={styles.eiCard}>
               <Zap size={40} className="text-secondary" />
               <h3>High Voltage Electrical</h3>
@@ -179,10 +182,11 @@ const Services = () => {
       </section>
 
       {/* AMC */}
-      <section className="section section-dark">
+      <section className="section-lg section-dark">
         <div className="container">
           <div className={styles.amcContent}>
-            <div className={styles.amcText}>
+            <div className={`${styles.amcText} animate-fade-up`}>
+              <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>LIFECYCLE SUPPORT</h4>
               <h2>Annual Maintenance Contracts (AMC)</h2>
               <p>
                 ACS offers comprehensive Annual Maintenance Contract services to ensure your automation and control systems continue to operate at peak performance. Our AMC programs are tailored to the specific needs of each client and facility.

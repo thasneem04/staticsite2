@@ -27,10 +27,11 @@ const About = () => {
       </div>
 
       {/* Company Intro */}
-      <section className="section">
+      <section className="section-lg">
         <div className={`container ${styles.introGrid}`}>
-          <div className={styles.introText}>
-            <h2 className="text-primary">Who We Are</h2>
+          <div className={`${styles.introText} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>WHO WE ARE</h4>
+            <h2 className="text-primary">Engineering Excellence</h2>
             <p>
               Auto-Control Synergy Services (ACS) is the system integration division of Redaa Developing Company (RDC), established in 2021 in the Kingdom of Saudi Arabia. We are a leading system integrator and a Saudi-based manufacturer and panel assembler of PLC/Drives-based Industrial Automation panels.
             </p>
@@ -57,9 +58,9 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="section section-light">
+      <section className="section-lg section-light">
         <div className={`container ${styles.mvGrid}`}>
-          <div className={styles.mvCard}>
+          <div className={`${styles.mvCard} animate-fade-up delay-100`}>
             <div className={styles.mvIcon}><Target size={40} /></div>
             <h3>Our Mission</h3>
             <ul>
@@ -73,7 +74,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className={styles.mvCard}>
+          <div className={`${styles.mvCard} animate-fade-up delay-200`}>
             <div className={styles.mvIcon}><TrendingUp size={40} /></div>
             <h3>Our Vision</h3>
             <p>
@@ -90,13 +91,14 @@ const About = () => {
       </section>
 
       {/* Core Commitments */}
-      <section className="section">
+      <section className="section-lg">
         <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2>Our Commitment to Excellence</h2>
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>OUR PROMISE</h4>
+            <h2>Commitment to Excellence</h2>
             <p>Every project delivered to the highest standards of quality, safety, and performance.</p>
           </div>
-          <div className={styles.commitmentsGrid}>
+          <div className={`${styles.commitmentsGrid} animate-fade-up delay-200`}>
             <div className={styles.commitmentCard}>
               <Shield size={32} className="text-primary" />
               <h4>Quality Assured</h4>
@@ -132,14 +134,15 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="section section-dark">
+      <section className="section-lg section-dark">
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>VALIDATED QUALITY</h4>
             <h2 style={{ color: 'white' }}>Our Certifications</h2>
-            <p style={{ color: '#9ca3af' }}>ACS is validated by internationally recognized quality and safety management standards.</p>
+            <p style={{ color: 'rgba(255,255,255,0.9)' }}>ACS is validated by internationally recognized quality and safety management standards.</p>
           </div>
           <div className={styles.certGrid}>
-            <div className={styles.certCard}>
+            <div className={`${styles.certCard} animate-fade-up delay-100`}>
               <Award size={36} className="text-secondary" />
               <h4>ISO 9001:2015</h4>
               <p>Quality Management System — ensuring consistent delivery of products and services that meet client and regulatory requirements.</p>

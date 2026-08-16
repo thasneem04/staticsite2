@@ -1,0 +1,77 @@
+.statementSection {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-color, #0b4a36);
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.statementBg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  filter: grayscale(100%);
+}
+
+.statementOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 40, 28, 0.95) 0%,
+    rgba(11, 74, 54, 0.9) 100%
+  );
+}
+
+.statementContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.iconCircle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.statementContent h2 {
+  font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.statementContent h2 span {
+  display: block;
+  color: #8fd0bc;
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+  margin-top: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+  .statementContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}

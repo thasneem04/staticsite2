@@ -1,0 +1,173 @@
+.facilitySection {
+  background-color: var(--bg-main);
+  overflow: hidden;
+}
+
+.facilityGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.imageCol {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 600px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(11, 74, 54, 0.4) 0%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+.stagingBadge {
+  position: absolute;
+  bottom: 40px;
+  right: -20px; /* Extends outside slightly for asymmetry */
+  background-color: var(--bg-main);
+  padding: 24px 32px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-lg);
+  border-left: 6px solid var(--secondary-color);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.badgeIcon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(193, 31, 36, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+
+.badgeIcon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--secondary-color);
+}
+
+.badgeText strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badgeText span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.1;
+}
+
+.contentCol h4 {
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.contentCol h2 {
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.leadText {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.techList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.techItem {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.techIcon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-gray);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.techItem:hover .techIcon {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.techItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.techItem p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .facilityGrid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .mainImg {
+    min-height: 400px;
+  }
+  .stagingBadge {
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stagingBadge {
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+  }
+}

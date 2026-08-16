@@ -1,0 +1,140 @@
+.whySection {
+  background-color: #ffffff;
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary-color, #c11f24);
+  margin-bottom: 8px;
+}
+
+.accentLine {
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color, #c11f24);
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+.leftCol h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  color: var(--primary-color, #0b4a36);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.leadPara {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.subPara {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.learnMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background-color: var(--primary-color, #0b4a36);
+  color: #ffffff !important;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(11, 74, 54, 0.2);
+}
+
+.learnMoreBtn:hover {
+  background-color: var(--secondary-color, #c11f24);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(193, 31, 36, 0.3);
+}
+
+.rightCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.featureCard {
+  background: #ffffff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color, #0b4a36);
+  box-shadow: 0 12px 30px rgba(11, 74, 54, 0.1);
+}
+
+.iconBox {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  background: rgba(11, 74, 54, 0.08);
+  color: var(--primary-color, #0b4a36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .iconBox {
+  background: var(--secondary-color, #c11f24);
+  color: #ffffff;
+}
+
+.featureCard h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.featureCard p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .splitGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rightCol {
+    grid-template-columns: 1fr;
+  }
+}

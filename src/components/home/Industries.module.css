@@ -1,0 +1,100 @@
+.industriesSection {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.bgImage {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/industries_oil.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 40, 28, 0.85); /* Dark green overlay */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.header h4 {
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.header h2 {
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+.industryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.industryItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  transition: all var(--transition-normal);
+}
+
+.industryItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.industryItem h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .industryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .industryGrid {
+    grid-template-columns: 1fr;
+  }
+}
