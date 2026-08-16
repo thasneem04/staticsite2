@@ -6,67 +6,100 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Jeddah Distribution Management Control Centre",
+      title: "Design & Construction of Jeddah Distribution Management Control Centre",
       client: "Saudi Electricity Company & Siemens",
       location: "Jeddah, KSA",
       scope: "Electrical, Low Voltage & Low Current Works",
-      desc: "Full electrical and low current works for the Jeddah Distribution Management Control Centre. Total plot area of 4,680 sqm with a built-up area of 2,872 sqm. Works included complete electrical installation, low current systems including fire alarm, CCTV, access control, and BMS."
+      desc: "Full electrical, low voltage, and low current execution for the Jeddah Distribution Management Control Centre. Total plot area of 4,680 sqm and built-up area of 2,872 sqm."
     },
     {
       id: 2,
       title: "Yanbu NGL — High Voltage Cable Replacement",
       client: "Saudi Aramco",
-      location: "Yanbu Industrial City, KSA",
+      location: "Yanbu, KSA",
       scope: "High Voltage Electrical Works",
-      desc: "Successfully completed a major HV electrical project involving the replacement of 25km of underground-to-overhead 13.4kV feeder cables from the power plant to the substation-specific switchgear. This critical project was delivered on schedule with no HSE incidents."
+      desc: "Successfully completed project involving high voltage cable works: replacing 25km underground to overhead 13.4kV feeder cables pulling from power plant to substation switchgear and transformer with testing, termination, and commissioning under Saudi Aramco POD supervision."
     },
     {
       id: 3,
-      title: "LV Switchgear Upgrade at Building 54",
-      client: "JHAH (John Hopkins Aramco Healthcare)",
+      title: "Upgrade Low Voltage Switchgear at Build. 54 Dhahran Health Center",
+      client: "JHAH (Johns Hopkins Aramco Healthcare)",
       location: "Dhahran, KSA",
       scope: "Low Voltage Switchgear Replacement",
-      desc: "Demolition of existing LV switchgear and installation of new switchgear with complete testing and commissioning. Works coordinated with Aramco POD and JHAH PMT. Project executed with full plant operational continuity maintained throughout the switchover."
+      desc: "Demolition of existing switchgear as per approved shutdown plan, and supply/installation of new switchgear with complete testing and commissioning alongside Aramco POD and JHAH PMT."
     },
     {
       id: 4,
-      title: "230V Panel Board Replacement Project",
-      client: "JHAH (John Hopkins Aramco Healthcare)",
+      title: "Provide 230V Panel Board Project",
+      client: "JHAH (Johns Hopkins Aramco Healthcare)",
       location: "Dhahran, KSA",
-      scope: "LV Panel Installation & Commissioning",
-      desc: "Demolition of existing LV equipment, installation of dry-type transformers for power supply, and installation of normal and emergency 230V panel boards. Complete testing, commissioning, and power-up performed with full documentation and client handover."
+      scope: "LV Panel Installation & Power Supply",
+      desc: "Demolishing existing equipment to make way for Electrical Rooms, providing power supply through dry-type transformers, installing normal and emergency 230V panels, room lighting, and power for fire alarm panels per electrical codes."
     },
     {
       id: 5,
-      title: "Industrial Automation Panel Supply — SABIC Plant",
-      client: "SABIC",
-      location: "Jubail Industrial City, KSA",
-      scope: "PLC Panel Manufacture & FAT",
-      desc: "Design, manufacture, and Factory Acceptance Testing of PLC-based automation panels for SABIC's petrochemical facility. Panels included Siemens S7-1500 PLC systems, integrated SCADA communication, and full instrumentation termination marshalling."
+      title: "Civil Works for Installation of Capacitors Banks (13 Substations)",
+      client: "SEC / Siemens",
+      location: "Eastern Province, KSA",
+      scope: "Substation Infrastructure & Civil Works",
+      desc: "Comprehensive civil works and foundations for the installation and integration of capacitor banks across 13 electrical substations in the Eastern Province."
     },
     {
       id: 6,
-      title: "DCS Marshalling Cabinet Supply",
-      client: "Petro Rabigh",
-      location: "Rabigh, KSA",
-      scope: "DCS Cabinet Fabrication & FAT",
-      desc: "Engineering, fabrication, and FAT of DCS Marshalling Cabinets (DI/AI/AO/DO/RTD) for Petro Rabigh refinery expansion. All cabinets built to ARAMCO engineering standards with full ATEX component compliance."
+      title: "FMS (Flow Meter Skid) Automation & Control",
+      client: "Honeywell",
+      location: "KSA",
+      scope: "Flow Meter Skid Integration",
+      desc: "Integration, instrumentation hook-up, wiring, and commissioning support for high-accuracy industrial Flow Meter Skids (FMS)."
+    },
+    {
+      id: 7,
+      title: "Excavation for FOC 10km & Cabinet Installation",
+      client: "Detesd (I.T.O)",
+      location: "FDT#7, AL-Khaledia, Dammam, KSA",
+      scope: "Fiber Optic Infrastructure",
+      desc: "10km FOC excavation, installation of cabinets, U-Gard's OBD's, M.H & H.H duct laying backfilling with concrete, milling/paving, and fiber splicing."
+    },
+    {
+      id: 8,
+      title: "Fiber Optic Infrastructure & Cabinet Installation",
+      client: "I.T.C - CCS",
+      location: "KSA",
+      scope: "FOC Network Deployment",
+      desc: "Excavation for FOC, installation of cabinets, U-Gard's OBD's, M.H & H.H duct laying, backfilling with concrete, milling/paving, and FOC termination/splicing."
+    },
+    {
+      id: 9,
+      title: "Dawiyat Telecom FOC Infrastructure Deployment",
+      client: "Dawiyat Telecom - CCS",
+      location: "KSA",
+      scope: "Telecom FOC Infrastructure",
+      desc: "Excavation for FOC, installation of cabinets, U-Gard's OBD's, duct laying, backfilling with concrete, milling and paving, and fiber optic splicing."
+    },
+    {
+      id: 10,
+      title: "STC National Guard Project FOC Deployment",
+      client: "Ericsson",
+      location: "Dammam, KSA",
+      scope: "STC National Guard FOC Deployment",
+      desc: "FOC excavation, cabinet installations, U-Gard's OBD's, duct laying with concrete backfill, milling and paving, and precision fiber splicing in M.H., H.H & OBD's."
     }
   ];
 
   const panelSolutions = [
     "PLC Panels (Siemens, Allen-Bradley, Schneider)",
-    "VFD / Variable Speed Drive Panels",
+    "Busbar Protection Panels",
+    "VFD / Variable Frequency Drive Panels",
+    "Transformer Protection Panels",
+    "Annunciator Panels",
     "DCS / ESD / F&G System Cabinets",
     "Marshalling Cabinets (DI/AI/AO/DO/RTD)",
-    "Busbar & Transformer Protection Panels",
-    "Power Distribution Boards (PDB / MDB)",
-    "Annunciator Panels",
-    "Remote Terminal Unit (RTU) Cabinets",
+    "Power Distribution Cabinets (PDB)",
     "Network & Server Cabinets",
+    "Remote Terminal Units (RTU)",
     "Junction Boxes & Control Stations (ATEX)",
     "IRP Cabinets",
-    "Vibration Monitoring System Cabinets",
+    "Vibration Monitoring System Cabinets"
   ];
 
   return (

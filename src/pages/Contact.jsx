@@ -81,33 +81,58 @@ const Contact = () => {
           <div className={`${styles.formContainer} animate-fade-up delay-200`}>
             <h4 className="text-secondary" style={{ letterSpacing: '2px', marginBottom: '12px' }}>REQUEST A QUOTE</h4>
             <h3>Send us a Message</h3>
-            <p className={styles.formSubtitle}>Fill out the form below and our team will get back to you promptly.</p>
+            <p className={styles.formSubtitle}>Fill out the form below and our engineering team will get back to you promptly.</p>
             
             <form className={styles.contactForm} onSubmit={(e) => e.preventDefault()}>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Full Name</label>
-                <input type="text" id="name" placeholder="John Doe" required />
+                <input type="text" id="name" placeholder="Your Name or Company" required />
               </div>
               
               <div className={styles.formGroup}>
                 <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" placeholder="john@company.com" required />
+                <input type="email" id="email" placeholder="name@company.com" required />
               </div>
               
               <div className={styles.formGroup}>
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Project Inquiry" required />
+                <label htmlFor="subject">Subject / Inquiry Type</label>
+                <input type="text" id="subject" placeholder="e.g. PLC Panel Design, FAT Staging, Switchgear Upgrade" required />
               </div>
               
               <div className={styles.formGroup}>
-                <label htmlFor="message">Message</label>
-                <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                <label htmlFor="message">Project Requirements / RFQ Details</label>
+                <textarea id="message" rows="5" placeholder="Please describe your automation, panel assembly, or E&I requirements..." required></textarea>
               </div>
               
               <button type="submit" className={styles.submitBtn}>
-                Send Message
+                Submit Inquiry
               </button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust & Slogan Banner (PDF Page 13) */}
+      <section className={`section-dark ${styles.sloganSection}`}>
+        <div className="container">
+          <div className={styles.sloganHeader}>
+            <h4>BUILDING SMARTER INDUSTRIAL OPERATIONS TOGETHER</h4>
+            <h2>COMPLETE AUTOMATION SOLUTIONS. RELIABLE PARTNER. LASTING IMPACT.</h2>
+            <p>From concept and engineering to installation, commissioning, and long-term support, ACS delivers reliable automation and control solutions.</p>
+          </div>
+
+          <div className={styles.trustRow}>
+            <div className={styles.trustItem}><span>✓</span> Quality Assured</div>
+            <div className={styles.trustItem}><span>✓</span> Expert Engineering Team</div>
+            <div className={styles.trustItem}><span>✓</span> End-to-End Solutions</div>
+            <div className={styles.trustItem}><span>✓</span> Fast Response & Support</div>
+            <div className={styles.trustItem}><span>✓</span> Trusted by Industries</div>
+            <div className={styles.trustItem}><span>✓</span> Commitment to Excellence</div>
+          </div>
+
+          <div className={styles.bottomSlogan}>
+            <strong>AUTO-CONTROL SYNERGY SERVICES (ACS)</strong>
+            <span>AUTOMATION TODAY. SMARTER TOMORROW.</span>
           </div>
         </div>
       </section>
@@ -116,3 +141,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

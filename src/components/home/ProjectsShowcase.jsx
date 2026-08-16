@@ -36,21 +36,48 @@ const ProjectsShowcase = () => {
     },
     {
       sno: '04',
-      name: 'Reverse Engineering & Modification of Yokogawa DCS & Mimic',
-      sector: 'Oil & Gas',
-      client: 'Saudi Aramco / RATAWI',
-      location: 'Eastern Province, KSA',
+      name: 'Provide 230V Panel Board & Power Supply Project',
+      sector: 'Healthcare & Utility',
+      client: 'JHAH',
+      location: 'Dhahran, KSA',
       status: 'Completed',
-      scope: 'Legacy Yokogawa DCS/F&G hardware reverse engineering & cabinet assembly'
+      scope: 'Dry-type transformers, normal & emergency 230V panels, and fire alarm power'
     },
     {
       sno: '05',
+      name: 'Civil Works & Installation of Capacitor Banks (13 Substations)',
+      sector: 'Power & Grid',
+      client: 'SEC / Siemens',
+      location: 'Eastern Province, KSA',
+      status: 'Completed',
+      scope: 'Substation civil works, foundations, and capacitor banks installation'
+    },
+    {
+      sno: '06',
+      name: 'FMS (Flow Meter Skid) Control & Integration',
+      sector: 'Petrochemical',
+      client: 'Honeywell',
+      location: 'KSA',
+      status: 'Completed',
+      scope: 'Instrumentation hook-up, wiring, and high-accuracy Flow Meter Skid commissioning'
+    },
+    {
+      sno: '07',
+      name: '10km Fiber Optic Cable & Cabinet Deployment',
+      sector: 'Telecom & FOC',
+      client: 'Detesd / Ericsson',
+      location: 'Dammam, KSA',
+      status: 'Completed',
+      scope: 'FOC excavation, duct laying, cabinet installations, and optical fiber splicing'
+    },
+    {
+      sno: '08',
       name: 'SIL-2 Fire & Gas PLC Control Panel Manufacturing',
       sector: 'Petrochemical',
-      client: 'Petro Rabigh Facility',
-      location: 'Rabigh, KSA',
+      client: 'SABIC / Petrokemya',
+      location: 'Jubail, KSA',
       status: 'Completed',
-      scope: 'Staging, FAT, assembling & field commissioning of SIL-2 PLC panels'
+      scope: 'Staging, FAT, swing-frame panel modifications & field commissioning'
     }
   ];
 
@@ -121,7 +148,7 @@ const ProjectsShowcase = () => {
           </div>
         </div>
 
-        {/* Structured Engineering Project Table (Gigabase Flow) */}
+        {/* Structured Engineering Project Directory Table */}
         <div className={styles.tableContainer}>
           <div className={styles.tableHeaderBar}>
             <div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Settings, Monitor, LayoutDashboard, Network, Radio, Wifi, Zap, Wrench, Thermometer, Cable } from 'lucide-react';
+import { Settings, Monitor, LayoutDashboard, Network, Radio, Wifi, Zap, Wrench, Thermometer, Cable, Cpu } from 'lucide-react';
 import styles from './Services.module.css';
 
 const Services = () => {
@@ -100,13 +100,13 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Panel Manufacturing */}
+      {/* Panel Manufacturing & Scope of Expertise */}
       <section className="section-lg section-light">
         <div className="container">
           <div className={`${styles.sectionHeader} animate-fade-up`}>
-            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>ENGINEERED SOLUTIONS</h4>
-            <h2>Panel Manufacturing & Fabrication</h2>
-            <p>Built in our state-of-the-art Dammam facility to international standards.</p>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>SCOPE OF EXPERTISE</h4>
+            <h2>Engineered Panel Systems & Scope</h2>
+            <p>Manufactured and assembled in our Dammam 2nd Industrial City facility to strict international quality standards.</p>
           </div>
           <div className={`${styles.panelGrid} animate-fade-up delay-200`}>
             {panelTypes.map((p, idx) => (
@@ -119,8 +119,51 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Electrical & Instrumentation */}
+      {/* Synergy Technology Capabilities & Engineering Services (PDF Page 04) */}
       <section className="section-lg">
+        <div className="container">
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>CAPABILITIES & SOLUTIONS</h4>
+            <h2>Synergy Technology Engineering Capabilities</h2>
+            <p>Delivering complete process automation from design drafting to advanced SIL-2 integration and reverse engineering.</p>
+          </div>
+
+          <div className={styles.capabilitiesGrid}>
+            <div className={`${styles.capCol} animate-fade-up delay-100`}>
+              <div className={styles.capHeader}>
+                <Settings size={28} className="text-secondary" />
+                <h3>Engineering Services</h3>
+              </div>
+              <ul className={styles.capList}>
+                <li>Design engineering & drafting (AutoCAD) for Cabinets</li>
+                <li>Engineering & drafting services for Vibration Monitoring</li>
+                <li>PLC Engineering (SIL-2) and Integration Services</li>
+                <li>DCS/F&G hardware Reverse Engineering for Yokogawa systems</li>
+                <li>IO loading, Field JB mapping, cabinet design, wiring drawings, and loop drawings</li>
+                <li>Fabrication and supply of operator consoles</li>
+              </ul>
+            </div>
+
+            <div className={`${styles.capCol} animate-fade-up delay-200`}>
+              <div className={styles.capHeader}>
+                <Cpu size={28} className="text-primary" />
+                <h3>Turnkey Solutions</h3>
+              </div>
+              <ul className={styles.capList}>
+                <li>SIL-2 PLC on GE Intellution PLC platform</li>
+                <li>F&G Mimic solutions based on OEM Partner DOMO</li>
+                <li>System, marshalling, PDP design, sourcing, assembly wiring & dispatch solutions</li>
+                <li>IO simulator design and supply</li>
+                <li>Console design, procurement of console instruments, assembly and wiring</li>
+                <li>Complete Hardware Engineering & Staging FAT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Electrical & Instrumentation */}
+      <section className="section-lg section-light">
         <div className="container">
           <div className={`${styles.sectionHeader} animate-fade-up`}>
             <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>COMPREHENSIVE EXPERTISE</h4>
@@ -181,7 +224,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* AMC */}
+      {/* AMC & Lifecycle Support */}
       <section className="section-lg section-dark">
         <div className="container">
           <div className={styles.amcContent}>
@@ -201,7 +244,7 @@ const Services = () => {
               </ul>
             </div>
             <div className={styles.amcImage}>
-              <img src="/images/facility.jpg" alt="ACS Workshop" />
+              <img src="/images/amc_diagnostic.jpg" alt="ACS PLC Diagnostic & Testing" />
             </div>
           </div>
         </div>
@@ -211,3 +254,4 @@ const Services = () => {
 };
 
 export default Services;
+

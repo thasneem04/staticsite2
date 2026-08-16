@@ -159,29 +159,84 @@
 }
 
 .panelCard {
-  background: var(--bg-main);
-  border: 1px solid var(--border-color);
+  background-color: var(--bg-main);
+  padding: 30px;
+  border-radius: 8px;
   border-left: 4px solid var(--primary-color);
-  border-radius: 6px;
-  padding: 20px 24px;
+  box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
 
 .panelCard:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--primary-color);
-  transform: translateY(-2px);
+  border-left-color: var(--secondary-color);
 }
 
 .panelCard h4 {
-  font-size: 1rem;
-  margin-bottom: 6px;
-  color: var(--text-main);
+  font-size: 1.15rem;
+  margin-bottom: 8px;
 }
 
 .panelCard p {
-  font-size: 0.88rem;
   color: var(--text-light);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ── Capabilities Grid ── */
+.capabilitiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.capCol {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 36px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.capHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.capHeader h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color, #0b4a36);
+  margin: 0;
+}
+
+.capList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.capList li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.capList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--secondary-color, #c11f24);
+  font-weight: 700;
 }
 
 /* ── E&I Grid ── */

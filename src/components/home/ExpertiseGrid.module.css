@@ -1,32 +1,57 @@
 .expertiseSection {
-  background-color: var(--bg-main);
+  background-color: #ffffff;
   border-bottom: 1px solid var(--border-color);
 }
 
 .sectionHeader {
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.sectionHeader h4 {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .sectionHeader h2 {
   color: var(--primary-color);
-  margin-bottom: 16px;
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.accentLine {
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color, #c11f24);
+  border-radius: 2px;
+  margin: 0 auto 16px;
 }
 
 .sectionHeader p {
   color: var(--text-light);
-  max-width: 600px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .contentGrid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.imageCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .imageWrapper {
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-color);
@@ -43,77 +68,151 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 24px 30px;
   background: linear-gradient(to top, rgba(6, 40, 28, 0.95), transparent);
 }
 
 .overlayText strong {
   display: block;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 4px;
 }
 
 .overlayText span {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+.projectHighlightsBox {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--primary-color, #0b4a36);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.projectHighlightsBox h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-color, #0b4a36);
+  margin-bottom: 14px;
+}
+
+.projectHighlightsBox ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.projectHighlightsBox li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.projectHighlightsBox li svg {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
 .gridWrapper {
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scopeBadge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 14px;
+  background: rgba(11, 74, 54, 0.1);
+  color: var(--primary-color, #0b4a36);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 14px;
 }
 
 .gridItem {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 24px;
-  background-color: var(--bg-gray);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+  gap: 12px;
+  padding: 16px 18px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   transition: all var(--transition-fast);
+  position: relative;
 }
 
 .gridItem:hover {
   background-color: white;
-  border-color: var(--secondary-color);
-  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color, #0b4a36);
+  box-shadow: 0 6px 18px rgba(11, 74, 54, 0.1);
   transform: translateY(-2px);
 }
 
+.itemNo {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--secondary-color, #c11f24);
+  background: rgba(193, 31, 36, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 .itemIcon {
-  color: var(--secondary-color);
-  background-color: rgba(193, 31, 36, 0.1);
-  padding: 12px;
-  border-radius: 6px;
+  color: var(--primary-color, #0b4a36);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .itemName {
   font-weight: 600;
-  color: var(--text-main);
-  font-size: 1.05rem;
-  line-height: 1.4;
+  color: #1e293b;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.calibNote {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {
   .contentGrid {
     grid-template-columns: 1fr;
   }
-  .gridWrapper {
-    padding-left: 0;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
+

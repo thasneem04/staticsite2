@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Shield, Target, TrendingUp, Users, Award, Cpu, Factory } from 'lucide-react';
+import { CheckCircle2, Shield, Target, TrendingUp, Users, Award, Cpu, Factory, Zap } from 'lucide-react';
 import styles from './About.module.css';
 
 const About = () => {
@@ -90,6 +90,87 @@ const About = () => {
         </div>
       </section>
 
+      {/* Parent Company: Redaa Developing Company (RDC) Profile (PDF Page 06) */}
+      <section className="section-lg">
+        <div className="container">
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>OUR PARENT COMPANY</h4>
+            <h2>Redaa Developing Company (RDC)</h2>
+            <div className={styles.accentLine}></div>
+            <p>
+              Redaa Developing Company Limited is a well-established organization with over 5 decades of experience in the Kingdom of Saudi Arabia. Rooted in development and innovation, RDC has expanded into diverse divisions, delivering excellence across multiple industries and disciplines.
+            </p>
+          </div>
+
+          <div className={styles.parentGrid}>
+            <div className={styles.parentCard}>
+              <Factory size={28} className="text-primary" />
+              <h4>Civil Construction</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <Cpu size={28} className="text-primary" />
+              <h4>Industrial Mechanical</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <Zap size={28} className="text-primary" />
+              <h4>Electrical & Instrumentation</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <Shield size={28} className="text-primary" />
+              <h4>Operation & Maintenance</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <TrendingUp size={28} className="text-primary" />
+              <h4>Trading Division</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <Users size={28} className="text-primary" />
+              <h4>Project Support Services</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <Award size={28} className="text-primary" />
+              <h4>Heavy Equipment Rental</h4>
+            </div>
+            <div className={styles.parentCard}>
+              <CheckCircle2 size={28} className="text-primary" />
+              <h4>Scaffolding Services</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Satisfaction Philosophy (PDF Page 09) */}
+      <section className="section-lg section-light">
+        <div className="container">
+          <div className={`${styles.sectionHeader} animate-fade-up`}>
+            <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>CUSTOMER SATISFACTION</h4>
+            <h2>Dedicated to Quality & Continuous Improvement</h2>
+            <div className={styles.accentLine}></div>
+            <p>
+              Customer satisfaction is at the heart of everything we do. We are committed to delivering high-quality products and services that consistently meet and exceed our customers' expectations.
+            </p>
+          </div>
+
+          <div className={styles.satisfactionGrid}>
+            <div className={styles.satisfactionCard}>
+              <Award size={36} className="text-secondary" />
+              <h3>Quality & Excellence</h3>
+              <p>Maintaining the highest manufacturing quality and continually refining our processes to exceed client expectations across all industrial sectors.</p>
+            </div>
+            <div className={styles.satisfactionCard}>
+              <Users size={36} className="text-secondary" />
+              <h3>People & Training</h3>
+              <p>Conducting regular training sessions for all engineering and assembly staff, utilizing well-calibrated advanced machinery to manufacture custom solutions.</p>
+            </div>
+            <div className={styles.satisfactionCard}>
+              <TrendingUp size={36} className="text-secondary" />
+              <h3>Feedback & Improvement</h3>
+              <p>Systematically recording customer feedback upon project completion to continually enhance engineering delivery and long-term client partnerships.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Core Commitments */}
       <section className="section-lg">
         <div className="container">
@@ -133,29 +214,34 @@ const About = () => {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Certifications (PDF Page 10) */}
       <section className="section-lg section-dark">
         <div className="container">
           <div className={`${styles.sectionHeader} animate-fade-up`}>
             <h4 className="text-secondary" style={{ letterSpacing: '2px' }}>VALIDATED QUALITY</h4>
-            <h2 style={{ color: 'white' }}>Our Certifications</h2>
-            <p style={{ color: 'rgba(255,255,255,0.9)' }}>ACS is validated by internationally recognized quality and safety management standards.</p>
+            <h2 style={{ color: 'white' }}>Our Certifications & Credentials</h2>
+            <p style={{ color: 'rgba(255,255,255,0.9)' }}>ACS quality, environmental, and occupational safety standards are fully validated by accredited international bodies.</p>
           </div>
           <div className={styles.certGrid}>
             <div className={`${styles.certCard} animate-fade-up delay-100`}>
               <Award size={36} className="text-secondary" />
               <h4>ISO 9001:2015</h4>
-              <p>Quality Management System — ensuring consistent delivery of products and services that meet client and regulatory requirements.</p>
+              <p>Quality Management System for Design, Engineering, Integration & Assembly of DCS, ESD, F&G, PDB, IRP, RTU & PLC Control Panels.</p>
             </div>
-            <div className={styles.certCard}>
+            <div className={`${styles.certCard} animate-fade-up delay-150`}>
               <Award size={36} className="text-secondary" />
               <h4>ISO 14001:2015</h4>
-              <p>Environmental Management System — demonstrating our commitment to minimizing environmental impact in all our operations.</p>
+              <p>Environmental Management System — demonstrating strict environmental sustainability and waste minimization in our manufacturing facility.</p>
             </div>
-            <div className={styles.certCard}>
+            <div className={`${styles.certCard} animate-fade-up delay-200`}>
               <Award size={36} className="text-secondary" />
               <h4>ISO 45001:2018</h4>
-              <p>Occupational Health & Safety Management — ensuring safe, healthy working conditions for all our employees and contractors.</p>
+              <p>Occupational Health & Safety Management — ensuring world-class safety protocols and zero-incident working environments.</p>
+            </div>
+            <div className={`${styles.certCard} animate-fade-up delay-250`}>
+              <Shield size={36} className="text-secondary" />
+              <h4>Ministry of Commerce C.R.</h4>
+              <p>Commercial Registration Certificate No. 7023676492 (Issued: 14/06/2021) — Registered for Industrial Automation & Control Systems in KSA.</p>
             </div>
           </div>
         </div>
@@ -180,3 +266,4 @@ const About = () => {
 };
 
 export default About;
+

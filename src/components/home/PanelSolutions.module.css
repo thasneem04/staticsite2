@@ -1,55 +1,69 @@
 .panelsSection {
-  background-color: var(--bg-gray);
+  background-color: #f8fafc;
   border-bottom: 1px solid var(--border-color);
 }
 
 .header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 60px;
+  margin: 0 auto 50px;
 }
 
 .header h4 {
+  font-size: 0.85rem;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .header h2 {
   color: var(--primary-color);
-  margin-bottom: 20px;
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.accentLine {
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color, #c11f24);
+  border-radius: 2px;
+  margin: 0 auto 16px;
 }
 
 .header p {
   color: var(--text-light);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .panelsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 .panelCard {
-  background-color: var(--bg-main);
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 12px;
-  box-shadow: var(--shadow-sm);
-  transition: all var(--transition-normal);
-  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #e2e8f0;
 }
 
 .panelCard:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(11, 74, 54, 0.12);
   border-color: var(--primary-color);
 }
 
 .imgWrapper {
   position: relative;
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
-  height: 260px;
+  height: 240px;
 }
 
 .imgWrapper img {
@@ -60,7 +74,7 @@
 }
 
 .panelCard:hover .imgWrapper img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .overlay {
@@ -68,21 +82,42 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px 16px;
-  background: linear-gradient(to top, rgba(11, 74, 54, 0.95), transparent);
-  text-align: center;
+  padding: 24px 18px 18px;
+  background: linear-gradient(to top, rgba(6, 40, 28, 0.95) 0%, rgba(6, 40, 28, 0.6) 65%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.iconCircle {
+  color: #ffffff;
+  background: rgba(193, 31, 36, 0.85);
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .overlay h3 {
   color: white;
-  font-size: 1.1rem;
-  margin: 0;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  font-size: 1.15rem;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.overlay span {
+  color: #94d8c2;
+  font-size: 0.82rem;
+  font-weight: 500;
 }
 
 .cta {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .textLink {
@@ -90,15 +125,17 @@
   align-items: center;
   gap: 8px;
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.05rem;
   border-bottom: 2px solid transparent;
   padding-bottom: 2px;
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
 .textLink:hover {
   border-color: var(--secondary-color);
+  color: var(--secondary-color);
   gap: 12px;
 }
 
@@ -108,8 +145,9 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .panelsGrid {
     grid-template-columns: 1fr;
   }
 }
+
