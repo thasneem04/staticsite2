@@ -1,0 +1,218 @@
+/* ═══════════════════════════════════════════════════════════════
+   MajorClients.module.css — Exact match to original layout
+═══════════════════════════════════════════════════════════════ */
+
+.wrapper {
+  background-color: #f8fafc;
+  background-image: 
+    linear-gradient(#f1f5f9 1px, transparent 1px),
+    linear-gradient(90deg, #f1f5f9 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 60px 0;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tierContainer {
+  margin-bottom: 50px;
+}
+
+/* ── HEADER ─────────────────────────────────────────────────── */
+.tierHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.headerLine {
+  width: 120px;
+  height: 2px;
+  background-color: #124d38;
+  position: relative;
+}
+
+.dotLeft, .dotRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #124d38;
+  border-radius: 50%;
+}
+
+.dotLeft { right: -15px; }
+.dotRight { left: -15px; }
+
+.tierTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0b4a36;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 15px;
+}
+
+.tierTitleSmall {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0b4a36;
+  margin: 0 5px;
+}
+
+/* ── GRID BOX ───────────────────────────────────────────────── */
+.gridBox {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.logoCell {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  min-height: 110px;
+  background: #ffffff;
+}
+
+/* Remove right borders for last column */
+.grid4 .logoCell:nth-child(4n) { border-right: none; }
+.grid5 .logoCell:nth-child(5n) { border-right: none; }
+
+/* Remove bottom borders for last row */
+.grid4 .logoCell:nth-last-child(-n+4) { border-bottom: none; }
+.grid5 .logoCell:nth-last-child(-n+5) { border-bottom: none; }
+.grid4 .logoCell.noBottomBorder { border-bottom: none; }
+.grid5 .logoCell.noBottomBorder { border-bottom: none; }
+
+
+.logoImg {
+  max-width: 140px;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+.logoFallbackText {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #0f172a;
+  text-align: center;
+}
+
+.logoSub {
+  font-size: 0.72rem;
+  color: #64748b;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* ── MORE CARD ──────────────────────────────────────────────── */
+.moreText {
+  font-weight: 700;
+  color: #0b4a36;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ── TRUST RIBBON ───────────────────────────────────────────── */
+.trustRibbon {
+  background: #0b4a36;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.trustRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.trustBadge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trustIcon {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+}
+
+.trustBadge strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.trustBadge span {
+  display: block;
+  font-size: 0.75rem;
+  color: #8fd0bc;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .grid4, .grid5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid4 .logoCell, .grid5 .logoCell {
+    border-right: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .grid4 .logoCell:nth-child(3n), .grid5 .logoCell:nth-child(3n) {
+    border-right: none;
+  }
+  .trustRow {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid4, .grid5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid4 .logoCell, .grid5 .logoCell {
+    border-right: 1px solid #f1f5f9;
+  }
+  .grid4 .logoCell:nth-child(even), .grid5 .logoCell:nth-child(even) {
+    border-right: none;
+  }
+  .tierTitle { font-size: 1.4rem; }
+  .tierTitleSmall { font-size: 1.1rem; }
+  .headerLine { width: 50px; }
+}

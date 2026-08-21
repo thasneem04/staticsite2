@@ -9,8 +9,8 @@ import ExpertiseGrid from '../components/home/ExpertiseGrid';
 import ElectricalInstrumentation from '../components/home/ElectricalInstrumentation';
 import ProjectsShowcase from '../components/home/ProjectsShowcase';
 import PanelSolutions from '../components/home/PanelSolutions';
+import MajorClients from '../components/home/MajorClients';
 import QualityCertifications from '../components/home/QualityCertifications';
-import ClientsWall from '../components/home/ClientsWall';
 import Industries from '../components/home/Industries';
 import WhyChooseACS from '../components/home/WhyChooseACS';
 import PreFooterCTA from '../components/home/PreFooterCTA';
@@ -28,8 +28,8 @@ const Home = () => {
       <ElectricalInstrumentation />
       <ProjectsShowcase />
       <PanelSolutions />
+      <MajorClients />
       <QualityCertifications />
-      <ClientsWall />
       <Industries />
       <WhyChooseACS />
       <PreFooterCTA />

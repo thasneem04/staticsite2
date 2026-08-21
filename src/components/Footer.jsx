@@ -75,7 +75,13 @@ const Footer = () => {
       
       <div className={styles.footerBottom}>
         <div className={`container ${styles.bottomInner}`}>
-          <p>&copy; {new Date().getFullYear()} Auto-Control Synergy Services (ACS). All rights reserved.</p>
+          <p className={styles.copyrightText}>
+            &copy; 2026 Auto-Control Synergy Services (ACS). All rights reserved.
+            <span className={styles.attributionDivider}>·</span>
+            <span className={styles.poweredBy}>
+              Powered by <a href="https://mncsglobal.com/" target="_blank" rel="noopener noreferrer">MNCsGlobal</a>
+            </span>
+          </p>
           <div className={styles.bottomLinks}>
             <span>Kingdom of Saudi Arabia</span>
             <span>·</span>
