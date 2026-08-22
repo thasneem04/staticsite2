@@ -217,14 +217,14 @@ const ProjectsShowcase = () => {
           <div className={styles.tableHeaderBar}>
             <div>
               <h3>The Top Projects Directory Matrix</h3>
-              <p>Official record of 12 major projects executed across the Kingdom of Saudi Arabia</p>
+              <p>Major projects executed across the Kingdom of Saudi Arabia</p>
             </div>
             <div className={styles.filterTabs}>
               <button 
                 className={`${styles.tabBtn} ${activeFilter === 'all' ? styles.tabActive : ''}`} 
                 onClick={() => setActiveFilter('all')}
               >
-                All (12 Projects)
+                All Projects
               </button>
               <button 
                 className={`${styles.tabBtn} ${activeFilter === 'honeywell' ? styles.tabActive : ''}`} 
@@ -242,7 +242,7 @@ const ProjectsShowcase = () => {
                 className={`${styles.tabBtn} ${activeFilter === 'power' ? styles.tabActive : ''}`} 
                 onClick={() => setActiveFilter('power')}
               >
-                Power & Substation
+                Power &amp; Substation
               </button>
             </div>
           </div>
@@ -251,7 +251,6 @@ const ProjectsShowcase = () => {
             <table className={styles.projectTable}>
               <thead>
                 <tr>
-                  <th>S.No</th>
                   <th>Year/s</th>
                   <th>Customer Name</th>
                   <th>ACS Project No</th>
@@ -262,9 +261,6 @@ const ProjectsShowcase = () => {
               <tbody>
                 {filteredProjects.map((proj) => (
                   <tr key={proj.sno}>
-                    <td className={styles.snoCell}>
-                      <span className={styles.snoBadge}>{proj.sno}</span>
-                    </td>
                     <td className={styles.yearCell}>
                       <strong>{proj.year}</strong>
                     </td>
