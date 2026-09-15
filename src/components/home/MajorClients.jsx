@@ -39,7 +39,7 @@ const MAJOR_CLIENTS = [
   { name: 'Schneider Electric', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Schneider_Electric_2007.svg',           color: '#3DCD58' },
   { name: 'Alderley',         logoUrl: null,        color: '#0061A0', sub: 'أولديرلي' },
   { name: 'Dräger',           logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Dr%C3%A4ger_Logo.svg',         color: '#003087' },
-  { name: 'HEMA',             logoUrl: null,                                            color: '#E3000F' },
+  { name: 'HIMA',             logoUrl: null,                                            color: '#E3000F' },
   { name: 'JGC',              logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/JGC_Corporation_logo.svg',             color: '#E3000F' },
   { name: 'GE',               logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/General_Electric_logo.svg',              color: '#3B7DC4' },
   { name: 'Omni®',            logoUrl: null,        color: '#D31245' },

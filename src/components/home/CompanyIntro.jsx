@@ -1,33 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronRight } from 'lucide-react';
-import styles from './CompanyIntro.module.css';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
+import styles from "./CompanyIntro.module.css";
 
 const CompanyIntro = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={`section-lg ${styles.introSection}`}>
       <div className={`container ${styles.introGrid}`}>
         <div className={styles.introContent}>
           <div className="animate-fade-up">
-            <h4 className="text-secondary" style={{ letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '12px' }}>
-              Who We Are
+            <h4
+              className="text-secondary"
+              style={{
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                marginBottom: "12px",
+              }}
+            >
+              {t("home.companyIntro.eyebrow")}
             </h4>
-            <h2 className="text-primary" style={{ marginBottom: '24px' }}>
-              Engineering Excellence Since 2021
+            <h2 className="text-primary" style={{ marginBottom: "24px" }}>
+              {t("home.companyIntro.title")}
             </h2>
-            <p className={styles.leadText}>
-              Auto-Control Synergy Services (ACS) is the system integration division of Redaa Developing Company (RDC), operating as a leading manufacturer and panel assembler in Saudi Arabia.
-            </p>
-            <p className={styles.subText}>
-              From the initial development phase to on-site installation, we deliver a broad range of services including project management, engineering, supply, integration, assembly, testing, and site services. We stand at the forefront of process automation, providing tailor-made solutions for the most demanding industrial environments.
-            </p>
-            
+            <p className={styles.leadText}>{t("home.companyIntro.lead")}</p>
+            <p className={styles.subText}>{t("home.companyIntro.sub")}</p>
+
             <Link to="/about" className={styles.exploreLink}>
-              Discover our full capabilities <ChevronRight size={18} />
+              {t("home.companyIntro.link")} <ChevronRight size={18} />
             </Link>
           </div>
         </div>
-        
+
         <div className={styles.imageGrid}>
           <div className={`${styles.mainImage} animate-scale-in`}>
             <div className={styles.imgDeco}></div>
@@ -35,12 +41,12 @@ const CompanyIntro = () => {
           </div>
           <div className={`${styles.floatingStats} animate-fade-up delay-300`}>
             <div className={styles.statItem}>
-              <h3>ISO</h3>
-              <span>Certified</span>
+              <h3>{t("home.companyIntro.iso")}</h3>
+              <span>{t("home.companyIntro.certified")}</span>
             </div>
             <div className={styles.statItem}>
-              <h3>KSA</h3>
-              <span>Based</span>
+              <h3>{t("home.companyIntro.ksa")}</h3>
+              <span>{t("home.companyIntro.based")}</span>
             </div>
           </div>
         </div>

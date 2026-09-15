@@ -124,6 +124,20 @@
   letter-spacing: 1px;
 }
 
+:global(html[dir="rtl"]) .cardNumber {
+  left: 20px;
+  right: auto;
+}
+
+:global(html[dir="rtl"]) .serviceCard::before {
+  transform-origin: right;
+}
+
+:global(html[dir="rtl"]) .cardLink svg,
+:global(html[dir="rtl"]) .primaryBtnLarge svg {
+  transform: scaleX(-1);
+}
+
 .serviceCard:hover .cardLink {
   color: var(--secondary-color);
   gap: 12px;

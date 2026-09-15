@@ -1,17 +1,23 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Building2, Factory } from 'lucide-react';
-import styles from './Contact.module.css';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Mail, Phone, MapPin, Building2, Factory } from "lucide-react";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.contactPage}>
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
-        <div className={styles.pageHeaderBg} style={{ backgroundImage: "url('/images/header_contact.jpg')" }} />
+        <div
+          className={styles.pageHeaderBg}
+          style={{ backgroundImage: "url('/images/header_contact.jpg')" }}
+        />
         <div className={styles.pageHeaderOverlay} />
         <div className={`container ${styles.pageHeaderContent}`}>
-          <h1>Get In Touch</h1>
-          <p>We are here to help you with your automation needs</p>
+          <h1>{t("contact.pageHeader.title")}</h1>
+          <p>{t("contact.pageHeader.tagline")}</p>
         </div>
       </div>
 
@@ -20,9 +26,14 @@ const Contact = () => {
           {/* Contact Info */}
           <div className={`${styles.contactInfo} animate-fade-up`}>
             <div className={styles.infoHeader}>
-              <h4 className="text-secondary" style={{ letterSpacing: '2px', marginBottom: '12px' }}>LET'S TALK</h4>
-              <h2 className="text-primary">Contact Information</h2>
-              <p>Reach out to us for project inquiries, technical support, or partnership opportunities.</p>
+              <h4
+                className="text-secondary"
+                style={{ letterSpacing: "2px", marginBottom: "12px" }}
+              >
+                {t("contact.info.eyebrow")}
+              </h4>
+              <h2 className="text-primary">{t("contact.info.title")}</h2>
+              <p>{t("contact.info.summary")}</p>
             </div>
 
             <div className={styles.infoCards}>
@@ -31,7 +42,7 @@ const Contact = () => {
                   <Mail size={24} />
                 </div>
                 <div>
-                  <h4>Email</h4>
+                  <h4>{t("contact.form.email")}</h4>
                   <a href="mailto:RM@acsarabia.com">RM@acsarabia.com</a>
                 </div>
               </div>
@@ -41,24 +52,28 @@ const Contact = () => {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h4>Phone</h4>
-                  <a href="tel:+966564305884">+966 56430 5884</a><br />
+                  <h4>{t("contact.form.subject")}</h4>
+                  <a href="tel:+966564305884">+966 56430 5884</a>
+                  <br />
                   <a href="tel:+966138167077">+966 13 816 7077</a>
                 </div>
               </div>
             </div>
 
             <div className={styles.locations}>
-              <h3 className="text-primary">Our Locations</h3>
-              
+              <h3 className="text-primary">{t("contact.locations.title")}</h3>
+
               <div className={styles.locationItem}>
                 <Building2 size={24} className="text-secondary" />
                 <div>
-                  <h4>Head Office</h4>
+                  <h4>{t("contact.locations.headOffice")}</h4>
                   <address>
-                    Auto-Control Synergy Services (ACS)<br />
-                    P.O. Box: 3926<br />
-                    Dammam 34442<br />
+                    Auto-Control Synergy Services (ACS)
+                    <br />
+                    P.O. Box: 3926
+                    <br />
+                    Dammam 34442
+                    <br />
                     Kingdom of Saudi Arabia
                   </address>
                 </div>
@@ -67,9 +82,10 @@ const Contact = () => {
               <div className={styles.locationItem}>
                 <Factory size={24} className="text-secondary" />
                 <div>
-                  <h4>Factory & Workshop</h4>
+                  <h4>{t("contact.locations.factory")}</h4>
                   <address>
-                    2nd Industrial City, Dammam<br />
+                    2nd Industrial City, Dammam
+                    <br />
                     Kingdom of Saudi Arabia
                   </address>
                 </div>
@@ -79,33 +95,61 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className={`${styles.formContainer} animate-fade-up delay-200`}>
-            <h4 className="text-secondary" style={{ letterSpacing: '2px', marginBottom: '12px' }}>REQUEST A QUOTE</h4>
-            <h3>Send us a Message</h3>
-            <p className={styles.formSubtitle}>Fill out the form below and our engineering team will get back to you promptly.</p>
-            
-            <form className={styles.contactForm} onSubmit={(e) => e.preventDefault()}>
+            <h4
+              className="text-secondary"
+              style={{ letterSpacing: "2px", marginBottom: "12px" }}
+            >
+              {t("contact.form.eyebrow")}
+            </h4>
+            <h3>{t("contact.form.title")}</h3>
+            <p className={styles.formSubtitle}>{t("contact.form.subtitle")}</p>
+
+            <form
+              className={styles.contactForm}
+              onSubmit={(e) => e.preventDefault()}
+            >
               <div className={styles.formGroup}>
-                <label htmlFor="name">Full Name</label>
-                <input type="text" id="name" placeholder="Your Name or Company" required />
+                <label htmlFor="name">{t("contact.form.name")}</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder={t("contact.form.namePlaceholder")}
+                  required
+                />
               </div>
-              
+
               <div className={styles.formGroup}>
-                <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" placeholder="name@company.com" required />
+                <label htmlFor="email">{t("contact.form.email")}</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder={t("contact.form.emailPlaceholder")}
+                  required
+                />
               </div>
-              
+
               <div className={styles.formGroup}>
-                <label htmlFor="subject">Subject / Inquiry Type</label>
-                <input type="text" id="subject" placeholder="e.g. PLC Panel Design, FAT Staging, Switchgear Upgrade" required />
+                <label htmlFor="subject">{t("contact.form.subject")}</label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder={t("contact.form.subjectPlaceholder")}
+                  required
+                />
               </div>
-              
+
               <div className={styles.formGroup}>
-                <label htmlFor="message">Project Requirements / RFQ Details</label>
-                <textarea id="message" rows="5" placeholder="Please describe your automation, panel assembly, or E&I requirements..." required></textarea>
+                <label htmlFor="message">{t("contact.form.message")}</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder={t("contact.form.messagePlaceholder")}
+                  required
+                ></textarea>
               </div>
-              
+
               <button type="submit" className={styles.submitBtn}>
-                Submit Inquiry
+                {t("contact.form.submit")}
               </button>
             </form>
           </div>
@@ -116,23 +160,35 @@ const Contact = () => {
       <section className={`section-dark ${styles.sloganSection}`}>
         <div className="container">
           <div className={styles.sloganHeader}>
-            <h4>BUILDING SMARTER INDUSTRIAL OPERATIONS TOGETHER</h4>
-            <h2>COMPLETE AUTOMATION SOLUTIONS. RELIABLE PARTNER. LASTING IMPACT.</h2>
-            <p>From concept and engineering to installation, commissioning, and long-term support, ACS delivers reliable automation and control solutions.</p>
+            <h4>{t("contact.banner.title")}</h4>
+            <h2>{t("contact.banner.subtitle")}</h2>
+            <p>{t("contact.banner.copy")}</p>
           </div>
 
           <div className={styles.trustRow}>
-            <div className={styles.trustItem}><span>✓</span> Quality Assured</div>
-            <div className={styles.trustItem}><span>✓</span> Expert Engineering Team</div>
-            <div className={styles.trustItem}><span>✓</span> End-to-End Solutions</div>
-            <div className={styles.trustItem}><span>✓</span> Fast Response & Support</div>
-            <div className={styles.trustItem}><span>✓</span> Trusted by Industries</div>
-            <div className={styles.trustItem}><span>✓</span> Commitment to Excellence</div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("home.quality.check1")}
+            </div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("home.whyChoose.cards.0.title")}
+            </div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("home.whyChoose.cards.1.title")}
+            </div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("home.whyChoose.cards.2.title")}
+            </div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("home.industries.title")}
+            </div>
+            <div className={styles.trustItem}>
+              <span>✓</span> {t("about.promise.title")}
+            </div>
           </div>
 
           <div className={styles.bottomSlogan}>
-            <strong>AUTO-CONTROL SYNERGY SERVICES (ACS)</strong>
-            <span>AUTOMATION TODAY. SMARTER TOMORROW.</span>
+            <strong>{t("contact.banner.bottom")}</strong>
+            <span>{t("contact.banner.bottomTag")}</span>
           </div>
         </div>
       </section>
@@ -141,4 +197,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

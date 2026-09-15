@@ -50,6 +50,16 @@ body {
   overflow-x: hidden;
 }
 
+html[dir="rtl"] body {
+  text-align: start;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: start;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.15;
@@ -198,5 +208,4 @@ img {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(193, 31, 36, 0.35);
 }
-
 

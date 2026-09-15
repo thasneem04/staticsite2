@@ -1,0 +1,449 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "engineeringServices": "Engineering Services",
+    "projectsPortfolio": "Projects Portfolio",
+    "contactEnquiry": "Contact & Enquiry",
+    "coreDisciplines": "Core Disciplines",
+    "plcScada": "PLC & SCADA Automation",
+    "controlPanel": "Control Panel Assembly (FAT)",
+    "highVoltage": "High Voltage & Switchgears",
+    "fieldInstrumentation": "Field Instrumentation Hook-up",
+    "reverseEngineering": "Reverse Engineering (DCS/F&G)",
+    "amcCommissioning": "AMC & Commissioning Support",
+    "ksaHeadquarters": "KSA Headquarters",
+    "companyDesc": "Auto-Control Synergy Services (ACS) is the system integration division of Redaa Developing Company (RDC), established in 2021 in Saudi Arabia. We manufacture PLC/Drives automation panels and provide end-to-end industrial engineering.",
+    "cr": "Commercial Registration (C.R.):",
+    "addressName": "Auto-Control Synergy Services",
+    "addressStreet1": "2nd Industrial City, Dammam",
+    "addressStreet2": "P.O. Box: 3926, Dammam 34442",
+    "addressCountry": "Kingdom of Saudi Arabia",
+    "rights": "All rights reserved. System Integration Division of Redaa Developing Company.",
+    "poweredBy": "Powered by",
+    "vision2030": "Vision 2030 Partner"
+  },
+  "seo": {
+    "homeTitle": "Auto-Control Synergy Services | Industrial Automation & Engineering (ACS)",
+    "homeDesc": "ACS is a leading system integrator and panel assembler in Saudi Arabia, specializing in PLC/SCADA automation, control panels, and Vision 2030 engineering solutions.",
+    "aboutTitle": "About ACS | Premier System Integrator in Saudi Arabia",
+    "aboutDesc": "Learn about Auto-Control Synergy Services (ACS), a leading industrial automation, control panel manufacturer, and engineering firm established in Dammam, KSA.",
+    "servicesTitle": "Engineering Services & Solutions | Auto-Control Synergy Services",
+    "servicesDesc": "Comprehensive industrial automation services including PLC/SCADA development, control panel assembly, instrumentation, and HV switchgear maintenance.",
+    "projectsTitle": "Projects & Expertise | Auto-Control Synergy Services",
+    "projectsDesc": "Explore ACS's major industrial projects, panel manufacturing capabilities, and successful automation deliveries across Saudi Arabia.",
+    "contactTitle": "Contact Us | Auto-Control Synergy Services in Dammam",
+    "contactDesc": "Get in touch with Auto-Control Synergy Services (ACS) for project inquiries, control panel manufacturing, and industrial automation support in Saudi Arabia.",
+    "404Title": "Page Not Found | Auto-Control Synergy Services",
+    "404Desc": "The page you are looking for does not exist or has been moved."
+  },
+  "home": {
+    "hero": {
+      "badge": "Industrial Automation & Engineering Solutions",
+      "title": "INNOVATE. INTEGRATE. EXCEL.",
+      "desc": "Auto-Control Synergy Services (ACS) is a premier system integrator and panel assembler in Saudi Arabia, delivering complete automation, control systems, and engineering solutions to help our clients operate smarter, safer, and with uncompromising reliability.",
+      "explore": "Explore Solutions",
+      "request": "Request Proposal",
+      "metricEstablished": "Established in KSA",
+      "metricCapacity": "Cabinet Staging Capacity",
+      "metricIso": "ISO Certified",
+      "metricSafety": "Safety Excellence Record"
+    },
+    "companyIntro": {
+      "eyebrow": "Who We Are",
+      "title": "Engineering Excellence Since 2021",
+      "lead": "Auto-Control Synergy Services (ACS) is the system integration division of Redaa Developing Company (RDC), operating as a leading manufacturer and panel assembler in Saudi Arabia.",
+      "sub": "From the initial development phase to on-site installation, we deliver a broad range of services including project management, engineering, supply, integration, assembly, testing, and site services. We stand at the forefront of process automation, providing tailor-made solutions for the most demanding industrial environments.",
+      "link": "Discover our full capabilities",
+      "iso": "ISO",
+      "certified": "Certified",
+      "ksa": "KSA",
+      "based": "Based"
+    },
+    "trustValue": {
+      "missionTitle": "Our Mission",
+      "mission1": "Expand through strategic global partnerships",
+      "mission2": "Promote environmental sustainability & safety",
+      "mission3": "Deliver reliable, zero-compromise solutions",
+      "visionTitle": "Our Vision",
+      "visionText": "To be a leading integrated company with diversified and specialized activities in General Contracting, Trade, and Industry. We strive to be a prominent and influential presence in local, regional, and global markets."
+    },
+    "coreServices": {
+      "eyebrow": "WHAT WE DO",
+      "title": "Our Core Services",
+      "subtitle": "We design, build and deliver smart automation solutions that improve operational efficiency, ensure reliability and drive digital transformation across industries.",
+      "learnMore": "Learn More",
+      "viewAll": "View All Automation Services",
+      "services": [
+        {
+          "title": "PLC Automation & Control Systems",
+          "desc": "Custom engineered PLC panels with reliable components and clean wiring for precise control, seamless integration and long-term performance."
+        },
+        {
+          "title": "SCADA & RTU System Development",
+          "desc": "Scalable SCADA & RTU solutions for real-time monitoring, data acquisition, alarm management and enhanced process visibility."
+        },
+        {
+          "title": "HMI Design & Configuration",
+          "desc": "Intuitive and user-friendly HMI screens that provide actionable insights and simplify operations for better decision making."
+        },
+        {
+          "title": "Industrial Communication Networks",
+          "desc": "Robust communication architecture using industrial protocols to ensure high-speed and reliable data exchange."
+        },
+        {
+          "title": "Remote Monitoring Solutions",
+          "desc": "Secure remote access and monitoring solutions that enable real-time support, reduced downtime and improved operational control."
+        },
+        {
+          "title": "Industrial IoT Integration",
+          "desc": "Connect devices and systems, collect critical data and unlock advanced analytics for smarter, data-driven operations."
+        }
+      ]
+    },
+    "facility": {
+      "eyebrow": "MANUFACTURING",
+      "title": "State of the Art Facility",
+      "lead": "Our panel assembly facility in Dammam is fully equipped with modern, best-in-class equipment, allowing us to offer total engineering of Instrumentation and Control solutions tailored to our clients' exact needs.",
+      "badgeTop": "Staging of",
+      "badgeBottom": "100+ Cabinets",
+      "items": [
+        {
+          "title": "Engineering & Drafting",
+          "desc": "AutoCAD design for cabinets, wiring drawings, loop drawings, IO loading, and Field JB mapping."
+        },
+        {
+          "title": "PLC Engineering (SIL-2)",
+          "desc": "SIL-2 PLC integration on GE Intellution platforms and F&G Mimic solutions via OEM partners."
+        },
+        {
+          "title": "Reverse Engineering",
+          "desc": "DCS/F&G hardware reverse engineering for complex legacy Yokogawa systems."
+        },
+        {
+          "title": "Hardware Engineering",
+          "desc": "Complete PDP design, marshalling, sourcing, assembly, wiring, and console design."
+        }
+      ]
+    },
+    "statement": {
+      "line1": "YOU BUILD THE INDUSTRIAL FACILITY.",
+      "line2": "WE POWER THE AUTOMATION & CONTROL SYSTEMS BEHIND IT."
+    },
+    "expertise": {
+      "eyebrow": "OUR EXPERTISE",
+      "title": "Scope of Engineering & Panel Systems",
+      "summary": "At Auto-Control Synergy Services, we specialize in delivering high-quality automation and control system solutions through advanced engineering, precision manufacturing, and proven industry expertise.",
+      "summaryBoxTitle": "Design & Engineering Scope",
+      "scopeBadge": "10 Core Cabinet Architectures",
+      "calibration": "All equipment is calibrated and maintained per ISO 9001:2015 standard requirements.",
+      "items": [
+        "DCS / ESD / F&G System Cabinets",
+        "Marshalling Cabinets (DI / AI / AO / DO / RTD Signal)",
+        "IRP Cabinets",
+        "Power Distribution Cabinets (PDB)",
+        "Network Cabinets",
+        "Server Cabinets",
+        "Remote Terminal Units (RTU)",
+        "Junction Box, Control Station – Exe (ATEX Certified)",
+        "Vibration Monitoring System Cabinets",
+        "PLC Control & Marshalling Cabinets"
+      ],
+      "highlights": [
+        "DCS & ESD System Upgrades, Hardware Engineering, Cabinet Assembly, System Staging FAT, Lead Site Installation & IO Loop Checks.",
+        "SABIC Petrokemya Plant: MCC Interface Upgrade for VCM & PVC Train A&B Plants with newly designed swing frames and static frames.",
+        "Field installation of Instruments, CCTV, F&G detection devices, JBs, and Stanchions."
+      ]
+    },
+    "electrical": {
+      "eyebrow": "COMPREHENSIVE SOLUTIONS",
+      "title": "Electrical & Instrumentation",
+      "subtitle": "We deliver reliable and efficient services tailored to meet our clients' most demanding industrial requirements.",
+      "highVoltageTitle": "High Voltage & Power Systems",
+      "instrumentTitle": "Instrumentation & Control",
+      "lowCurrentTitle": "Low Current Systems",
+      "statsInstalled": "HV Cable Installed",
+      "statsSafety": "LTI Incidents",
+      "lowCurrent": ["Fire Alarm", "Public Address", "Access Control", "CCTV Systems", "Data & Telecom", "BMS", "Nurse Call", "MATV Systems"]
+    },
+    "projectsShowcase": {
+      "eyebrow": "PROVEN TRACK RECORD",
+      "title": "The Top Projects of the Past Four Years",
+      "subtitle": "Verified execution of critical industrial automation, control panels, and substation engineering for major energy programs in Saudi Arabia.",
+      "filterAll": "All Projects",
+      "filterHoneywell": "Honeywell Projects",
+      "filterSchneider": "Schneider Electric Projects",
+      "filterPower": "Power & Substation",
+      "tableTitle": "The Top Projects Directory Matrix",
+      "tableSubtitle": "Major projects executed across the Kingdom of Saudi Arabia",
+      "years": "Year/s",
+      "customer": "Customer Name",
+      "acsProjectNo": "ACS Project No",
+      "sapProjectNo": "Customer SAP No",
+      "projectName": "Project Name",
+      "explore": "Explore Full Technical Project Scope"
+    },
+    "panelSolutions": {
+      "eyebrow": "MANUFACTURING EXCELLENCE",
+      "title": "Our Panel Solutions",
+      "subtitle": "Custom-built control panels and cabinets engineered to international standards in our Dammam facility.",
+      "link": "View full manufacturing & engineering capabilities"
+    },
+    "quality": {
+      "eyebrow": "QUALITY ASSURANCE",
+      "title": "Certified Excellence",
+      "lead": "At ACS, quality is embedded in every process. We adhere strictly to international standards to ensure safety, reliability, and precision in all our deliveries.",
+      "check1": "Rigorous Factory Acceptance Testing (FAT)",
+      "check2": "Comprehensive Site Acceptance Testing (SAT)",
+      "check3": "Continuous employee training & development"
+    },
+    "industries": {
+      "eyebrow": "INDUSTRIES WE SERVE",
+      "title": "Powering Critical Industrial Sectors",
+      "subtitle": "Our automation, control panels, and E&I systems are engineered to withstand the rigorous demands of heavy industry across the Kingdom.",
+      "items": ["Oil & Gas", "Petrochemical", "Energy & Power Generation", "Water & Wastewater Treatment", "Manufacturing Industries", "Mining & Metals", "Infrastructure Projects", "Industrial Facilities"]
+    },
+    "whyChoose": {
+      "eyebrow": "WHY CHOOSE ACS?",
+      "title": "Your Trusted Industrial Automation Partner — In Kingdom & Beyond",
+      "lead": "Industrial plants face evolving challenges. Ensuring optimal process uptime, safety, and compliance requires a specialized engineering team with deep local capabilities and proven execution track records.",
+      "sub": "Auto-Control Synergy Services (ACS) operates a modern panel fabrication and assembly facility in Dammam's 2nd Industrial City. We seamlessly integrate with client operations across Oil & Gas, Power Generation, Utilities, and Manufacturing to deliver turnkey automation, control panels, and E&I field services.",
+      "link": "Learn More About ACS",
+      "cards": [
+        { "title": "Engineering Excellence", "desc": "Experienced automation engineers delivering accurate, robust, and SIL-rated control solutions." },
+        { "title": "In-House Assembly (FAT)", "desc": "Dedicated Dammam facility with capacity for staging and testing 100+ control cabinets simultaneously." },
+        { "title": "International Standards", "desc": "Certified ISO 9001, 14001, 45001 compliance adhering strictly to IEC and Saudi industrial regulations." },
+        { "title": "On-Time Project Delivery", "desc": "Disciplined project schedules, zero-LTI safety standards, and reliable turnaround for critical shutdowns." }
+      ]
+    },
+    "cta": {
+      "title": "Let's Discuss Your Next Automation Project",
+      "subtitle": "Share your technical requirements and our engineering team will get back to you promptly.",
+      "button": "Request Consultation"
+    }
+  },
+  "about": {
+    "pageHeader": { "title": "About ACS", "tagline": "Innovate. Integrate. Excel." },
+    "intro": {
+      "eyebrow": "WHO WE ARE",
+      "title": "Engineering Excellence",
+      "p1": "Auto-Control Synergy Services (ACS) is the system integration division of Redaa Developing Company (RDC), established in 2021 in the Kingdom of Saudi Arabia. We are a leading system integrator and a Saudi-based manufacturer and panel assembler of PLC/Drives-based Industrial Automation panels.",
+      "p2": "We deliver complete end-to-end solutions for Automation, Control Systems, Instrumentation, Industrial Digitalization, Remote Monitoring and Management. With strong local execution capabilities and in-house engineering, ACS provides panel design engineering, assembling, FAT, field installations, testing & commissioning and AMC support for industrial projects across the Kingdom.",
+      "p3": "ACS operates from its state-of-the-art workshop and panel fabrication facility located in the 2nd Industrial City, Dammam. Our factory is equipped with modern tooling and assembly infrastructure to support high-quality panel manufacturing for diverse industrial sectors.",
+      "cr": "Commercial Registration (C.R.) No:",
+      "stat2021": "2021",
+      "statEstablished": "Established",
+      "statKsa": "KSA",
+      "statBased": "Based",
+      "statIso": "ISO",
+      "statCertified": "Certified",
+      "statEi": "E&I",
+      "statSpecialists": "Specialists"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "list1": "Expand operations through strategic partnerships with global partners.",
+      "list2": "Meet community needs while promoting environmental sustainability and public safety.",
+      "list3": "Facilitate partner investments and create lasting value.",
+      "list4": "Deliver reliable automation solutions with zero-compromise on quality.",
+      "summary": "We aim to make a positive impact, drive growth, and deliver exceptional value to our stakeholders throughout the Kingdom and beyond."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "p1": "To be a leading integrated company with diversified and specialized activities in General Contracting, Trade, and Industry.",
+      "p2": "We strive to be a prominent and influential presence in local, regional, and global markets. With multiple offices across the Kingdom, we are committed to meeting client needs with efficiency and excellence.",
+      "p3": "ACS envisions becoming the foremost trusted partner for Industrial Automation and Electrical & Instrumentation solutions in Saudi Arabia."
+    },
+    "parentCompany": {
+      "eyebrow": "OUR PARENT COMPANY",
+      "title": "Redaa Developing Company (RDC)",
+      "summary": "Redaa Developing Company Limited is a well-established organization with over 5 decades of experience in the Kingdom of Saudi Arabia. Rooted in development and innovation, RDC has expanded into diverse divisions, delivering excellence across multiple industries and disciplines.",
+      "cards": ["Civil Construction", "Industrial Mechanical", "Electrical & Instrumentation", "Operation & Maintenance", "Trading Division", "Project Support Services", "Heavy Equipment Rental", "Scaffolding Services"]
+    },
+    "satisfaction": {
+      "eyebrow": "CUSTOMER SATISFACTION",
+      "title": "Dedicated to Quality & Continuous Improvement",
+      "summary": "Customer satisfaction is at the heart of everything we do. We are committed to delivering high-quality products and services that consistently meet and exceed our customers' expectations.",
+      "cards": [
+        { "title": "Quality & Excellence", "desc": "Maintaining the highest manufacturing quality and continually refining our processes to exceed client expectations across all industrial sectors." },
+        { "title": "People & Training", "desc": "Conducting regular training sessions for all engineering and assembly staff, utilizing well-calibrated advanced machinery to manufacture custom solutions." },
+        { "title": "Feedback & Improvement", "desc": "Systematically recording customer feedback upon project completion to continually enhance engineering delivery and long-term client partnerships." }
+      ]
+    },
+    "promise": {
+      "eyebrow": "OUR PROMISE",
+      "title": "Commitment to Excellence",
+      "summary": "Every project delivered to the highest standards of quality, safety, and performance.",
+      "cards": [
+        { "title": "Quality Assured", "desc": "We follow rigorous quality standards and international best practices to ensure reliable, safe, and long-lasting solutions for every client." },
+        { "title": "Safety First", "desc": "Safety is at the core of everything we do — protecting people, assets, and the environment on every project site and in every facility." },
+        { "title": "Performance Driven", "desc": "We deliver solutions that measurably enhance productivity, reliability, and operational performance for our industrial clients." },
+        { "title": "Client Success", "desc": "Our success is measured by the success of our clients. We are committed to building long-term partnerships built on trust and results." },
+        { "title": "In-House Engineering", "desc": "Our team of experienced engineers provides end-to-end engineering from panel design through field commissioning with full in-house capability." },
+        { "title": "Local Manufacturing", "desc": "Operating a state-of-the-art facility in Dammam's 2nd Industrial City, we assemble and test panels locally to support Vision 2030 goals." }
+      ]
+    },
+    "certs": {
+      "eyebrow": "VALIDATED QUALITY",
+      "title": "Our Certifications & Credentials",
+      "summary": "ACS quality, environmental, and occupational safety standards are fully validated by accredited international bodies.",
+      "cards": [
+        { "title": "ISO 9001:2015", "desc": "Quality Management System for Design, Engineering, Integration & Assembly of DCS, ESD, F&G, PDB, IRP, RTU & PLC Control Panels." },
+        { "title": "ISO 14001:2015", "desc": "Environmental Management System — demonstrating strict environmental sustainability and waste minimization in our manufacturing facility." },
+        { "title": "ISO 45001:2018", "desc": "Occupational Health & Safety Management — ensuring world-class safety protocols and zero-incident working environments." },
+        { "title": "Ministry of Commerce C.R.", "desc": "Commercial Registration Certificate No. 7023676492 (Issued: 14/06/2021) — Registered for Industrial Automation & Control Systems in KSA." }
+      ]
+    },
+    "clients": {
+      "title": "Trusted By Industry Leaders",
+      "summary": "We are proud to have worked with some of the most respected organizations in the Kingdom of Saudi Arabia.",
+      "list": ["Saudi Aramco", "Saudi Electricity Company", "JHAH (John Hopkins Aramco Healthcare)", "Siemens", "SABIC", "Petro Rabigh", "Ma'aden", "Tasnee"]
+    }
+  },
+  "services": {
+    "pageHeader": { "title": "Our Core Services", "tagline": "Smart automation solutions that improve operational efficiency" },
+    "intro": {
+      "eyebrow": "OUR EXPERTISE",
+      "title": "PLC Automation & Control Systems",
+      "p1": "ACS designs, builds, and delivers smart automation solutions that improve operational efficiency, ensure reliability, and drive digital transformation across industries. Our engineering team brings deep expertise in PLC programming, system integration, and panel fabrication.",
+      "p2": "From initial concept and design engineering through panel manufacture, Factory Acceptance Testing (FAT), field installation, testing, commissioning, and ongoing AMC support — we deliver complete turnkey automation solutions."
+    },
+    "panelScope": { "eyebrow": "SCOPE OF EXPERTISE", "title": "Engineered Panel Systems & Scope", "summary": "Manufactured and assembled in our Dammam 2nd Industrial City facility to strict international quality standards." },
+    "capabilities": {
+      "eyebrow": "CAPABILITIES & SOLUTIONS",
+      "title": "Synergy Technology Engineering Capabilities",
+      "summary": "Delivering complete process automation from design drafting to advanced SIL-2 integration and reverse engineering.",
+      "column1Title": "Engineering Services",
+      "column2Title": "Turnkey Solutions",
+      "list": [
+        "Design engineering & drafting (AutoCAD) for Cabinets",
+        "Engineering & drafting services for Vibration Monitoring",
+        "PLC Engineering (SIL-2) and Integration Services",
+        "DCS/F&G hardware Reverse Engineering for Yokogawa systems",
+        "IO loading, Field JB mapping, cabinet design, wiring drawings, and loop drawings",
+        "Fabrication and supply of operator consoles",
+        "SIL-2 PLC on GE Intellution PLC platform",
+        "F&G Mimic solutions based on OEM Partner DOMO",
+        "System, marshalling, PDP design, sourcing, assembly wiring & dispatch solutions",
+        "IO simulator design and supply",
+        "Console design, procurement of console instruments, assembly and wiring",
+        "Complete Hardware Engineering & Staging FAT"
+      ]
+    },
+    "coreServices": {
+      "items": [
+        { "title": "PLC Automation Panels", "desc": "Custom-engineered PLC panels with reliable components and clean wiring for precise control, seamless integration, and long-term performance. We use leading brands including Siemens, Allen-Bradley, Schneider Electric, and ABB." },
+        { "title": "SCADA & RTU System Development", "desc": "Scalable SCADA & RTU solutions providing real-time monitoring, data acquisition, alarm management, and enhanced process visibility. Tailored to client requirements from standalone systems to enterprise-level deployments." },
+        { "title": "HMI Design and Configuration", "desc": "Intuitive and user-friendly HMI screens that provide actionable insights, simplify operations, and support better decision-making across the plant floor. We develop using FactoryTalk, WinCC, Wonderware, and Ignition platforms." },
+        { "title": "Industrial Communication Networks", "desc": "Robust communication architecture using industrial protocols — Profibus, Profinet, Modbus, Ethernet/IP, Foundation Fieldbus — to ensure high-speed and reliable data exchange across distributed systems." },
+        { "title": "Remote Monitoring Solutions", "desc": "Secure remote access and monitoring solutions that enable real-time visibility, reduced downtime, and improved operational control from anywhere in the world, using industry-standard encrypted communication." },
+        { "title": "Industrial IoT Integration", "desc": "Connect devices and systems, collect critical operational data, and unlock advanced analytics for smarter, data-driven operations. We integrate IIoT platforms with existing plant assets and new greenfield projects." }
+      ]
+    },
+    "panelTypes": [
+      { "name": "PLC Panels", "detail": "Siemens S7-300/400/1200/1500, Allen-Bradley, Schneider" },
+      { "name": "VFD / Drive Panels", "detail": "Variable Frequency Drive panels for motor control" },
+      { "name": "DCS / ESD / F&G Cabinets", "detail": "For process control, emergency shutdown and fire & gas" },
+      { "name": "MCC Panels", "detail": "Motor Control Centres for industrial motor applications" },
+      { "name": "Marshalling Cabinets", "detail": "DI/AI/AO/DO/RTD termination and marshalling" },
+      { "name": "Power Distribution Boards", "detail": "LV PDB and MDB distribution panels" },
+      { "name": "Busbar Protection Panels", "detail": "Protection relay panels for HV/LV systems" },
+      { "name": "Annunciator Panels", "detail": "Audible and visual alarm annunciator systems" },
+      { "name": "Remote Terminal Units", "detail": "RTU cabinets for SCADA and telemetry" },
+      { "name": "Network & Server Cabinets", "detail": "Industrial network infrastructure racks" },
+      { "name": "Junction Boxes (ATEX)", "detail": "Explosion-proof JBs and control stations" },
+      { "name": "Vibration Monitoring Cabinets", "detail": "Machinery protection and vibration monitoring" }
+    ],
+    "ei": {
+      "eyebrow": "COMPREHENSIVE EXPERTISE",
+      "title": "Electrical & Instrumentation",
+      "summary": "Comprehensive E&I solutions tailored to meet our clients' most demanding project requirements.",
+      "cards": {
+        "highVoltage": {
+          "title": "High Voltage Electrical",
+          "desc": "We undertake complex HV electrical projects including switchgear replacement, cable pulling, and substation works for major clients such as Saudi Aramco and Saudi Electricity Company.",
+          "items": ["13.4kV / 33kV Underground & Overhead Cable Works", "HV Switchgear Replacement & Testing", "Substation Installation & Commissioning", "Transformer Installation", "Power Plant to Substation Feeder Works"]
+        },
+        "lowVoltage": {
+          "title": "Low Voltage Electrical",
+          "desc": "Top-tier LV electrical services for industrial and commercial projects. We specialize in factories, healthcare facilities, warehouses, and industrial complexes.",
+          "items": ["MDB / DB Panel Installation", "Cable Pulling & Termination", "UPS & Generator Installation", "Grounding & Lightning Protection", "Emergency & Normal Power Systems"]
+        },
+        "instrumentation": {
+          "title": "Instrumentation",
+          "desc": "Full instrumentation services including field instrument installation, calibration, loop checking and commissioning for process and control systems.",
+          "items": ["Field Instrument Installation", "Control Valve Installation & Testing", "Instrument Loop Checking", "Calibration & Certification", "Hazardous Area Instrument Works (ATEX)"]
+        },
+        "lowCurrent": {
+          "title": "Low Current Systems",
+          "desc": "High-quality low current system installations for residential, commercial, and industrial facilities across the Kingdom.",
+          "items": ["Fire Alarm & Public Address Systems", "CCTV & Access Control", "Data, Telephone & Paging Systems", "Building Management Systems (BMS)", "SCADA Telemetry Networks"]
+        }
+      }
+    },
+    "amc": {
+      "eyebrow": "LIFECYCLE SUPPORT",
+      "title": "Annual Maintenance Contracts (AMC)",
+      "summary": "ACS offers comprehensive Annual Maintenance Contract services to ensure your automation and control systems continue to operate at peak performance. Our AMC programs are tailored to the specific needs of each client and facility.",
+      "list": [
+        "Preventive maintenance schedules for all PLC, SCADA, and HMI systems",
+        "24/7 emergency breakdown support",
+        "Spare parts management and sourcing",
+        "System health checks and performance reporting",
+        "Software backup and version management",
+        "On-site and remote support options"
+      ]
+    }
+  },
+  "projects": {
+    "pageHeader": { "title": "Projects & Expertise", "tagline": "Delivering high-quality automation and control system solutions across the Kingdom" },
+    "sectionTitle": "Notable Projects",
+    "sectionSummary": "ACS has a proven track record of successfully completing numerous large-scale and complex projects for Saudi Arabia's most prestigious clients.",
+    "panelTitle": "Our Panel Solutions",
+    "panelSummary": "ACS manufactures and assembles a comprehensive range of custom control panels and cabinets at our state-of-the-art facility in Dammam's 2nd Industrial City. Every panel is built to client specifications, engineered to international standards, and fully tested before delivery.",
+    "panelDetail": "We support leading automation brands including Siemens, Allen-Bradley (Rockwell), Schneider Electric, ABB, and Yokogawa.",
+    "showcase": {
+      "featured": {
+        "tag": "Major Infrastructure",
+        "title": "Large-Scale Industrial Installations Across the Kingdom",
+        "desc": "Auto-Control Synergy Services has partnered with industry leaders including Saudi Aramco, Saudi Electricity Company, SABIC, JHAH, Petro Rabigh, Siemens, and more — delivering complex electrical, instrumentation, and automation projects on time and to the highest quality standards.",
+        "stat1": { "value": "25km+", "label": "HV Cable Works" },
+        "stat2": { "value": "4,680m²", "label": "Control Centre" },
+        "stat3": { "value": "Multiple", "label": "Saudi Aramco Projects" }
+      },
+      "items": [
+        { "id": 1, "title": "Design & Construction of Jeddah Distribution Management Control Centre", "client": "Saudi Electricity Company & Siemens", "location": "Jeddah, KSA", "scope": "Electrical, Low Voltage & Low Current Works", "desc": "Full electrical, low voltage, and low current execution for the Jeddah Distribution Management Control Centre. Total plot area of 4,680 sqm and built-up area of 2,872 sqm." },
+        { "id": 2, "title": "Yanbu NGL — High Voltage Cable Replacement", "client": "Saudi Aramco", "location": "Yanbu, KSA", "scope": "High Voltage Electrical Works", "desc": "Successfully completed project involving high voltage cable works: replacing 25km underground to overhead 13.4kV feeder cables pulling from power plant to substation switchgear and transformer with testing, termination, and commissioning under Saudi Aramco POD supervision." },
+        { "id": 3, "title": "Upgrade Low Voltage Switchgear at Build. 54 Dhahran Health Center", "client": "JHAH (Johns Hopkins Aramco Healthcare)", "location": "Dhahran, KSA", "scope": "Low Voltage Switchgear Replacement", "desc": "Demolition of existing switchgear as per approved shutdown plan, and supply/installation of new switchgear with complete testing and commissioning alongside Aramco POD and JHAH PMT." },
+        { "id": 4, "title": "Provide 230V Panel Board Project", "client": "JHAH (Johns Hopkins Aramco Healthcare)", "location": "Dhahran, KSA", "scope": "LV Panel Installation & Power Supply", "desc": "Demolishing existing equipment to make way for Electrical Rooms, providing power supply through dry-type transformers, installing normal and emergency 230V panels, room lighting, and power for fire alarm panels per electrical codes." },
+        { "id": 5, "title": "Civil Works for Installation of Capacitors Banks (13 Substations)", "client": "SEC / Siemens", "location": "Eastern Province, KSA", "scope": "Substation Infrastructure & Civil Works", "desc": "Comprehensive civil works and foundations for the installation and integration of capacitor banks across 13 electrical substations in the Eastern Province." },
+        { "id": 6, "title": "FMS (Flow Meter Skid) Automation & Control", "client": "Honeywell", "location": "KSA", "scope": "Flow Meter Skid Integration", "desc": "Integration, instrumentation hook-up, wiring, and commissioning support for high-accuracy industrial Flow Meter Skids (FMS)." },
+        { "id": 7, "title": "Excavation for FOC 10km & Cabinet Installation", "client": "Detesd (I.T.O)", "location": "FDT#7, AL-Khaledia, Dammam, KSA", "scope": "Fiber Optic Infrastructure", "desc": "10km FOC excavation, installation of cabinets, U-Gard's OBD's, M.H & H.H duct laying backfilling with concrete, milling/paving, and fiber splicing." },
+        { "id": 8, "title": "Fiber Optic Infrastructure & Cabinet Installation", "client": "I.T.C - CCS", "location": "KSA", "scope": "FOC Network Deployment", "desc": "Excavation for FOC, installation of cabinets, U-Gard's OBD's, M.H & H.H duct laying, backfilling with concrete, milling/paving, and FOC termination/splicing." },
+        { "id": 9, "title": "Dawiyat Telecom FOC Infrastructure Deployment", "client": "Dawiyat Telecom - CCS", "location": "KSA", "scope": "Telecom FOC Infrastructure", "desc": "Excavation for FOC, installation of cabinets, U-Gard's OBD's, duct laying, backfilling with concrete, milling and paving, and fiber optic splicing." },
+        { "id": 10, "title": "STC National Guard Project FOC Deployment", "client": "Ericsson", "location": "Dammam, KSA", "scope": "STC National Guard FOC Deployment", "desc": "FOC excavation, cabinet installations, U-Gard's OBD's, duct laying with concrete backfill, milling and paving, and precision fiber splicing in M.H., H.H & OBD's." }
+      ]
+    },
+    "panelSolutions": { "list": ["PLC Panels (Siemens, Allen-Bradley, Schneider)", "Busbar Protection Panels", "VFD / Variable Frequency Drive Panels", "Transformer Protection Panels", "Annunciator Panels", "DCS / ESD / F&G System Cabinets", "Marshalling Cabinets (DI/AI/AO/DO/RTD)", "Power Distribution Cabinets (PDB)", "Network & Server Cabinets", "Remote Terminal Units (RTU)", "Junction Boxes & Control Stations (ATEX)", "IRP Cabinets", "Vibration Monitoring System Cabinets"] }
+  },
+  "contact": {
+    "pageHeader": { "title": "Get In Touch", "tagline": "We are here to help you with your automation needs" },
+    "info": { "eyebrow": "LET'S TALK", "title": "Contact Information", "summary": "Reach out to us for project inquiries, technical support, or partnership opportunities." },
+    "form": { "eyebrow": "REQUEST A QUOTE", "title": "Send us a Message", "subtitle": "Fill out the form below and our engineering team will get back to you promptly.", "name": "Full Name", "namePlaceholder": "Your Name or Company", "email": "Email Address", "emailPlaceholder": "name@company.com", "subject": "Subject / Inquiry Type", "subjectPlaceholder": "e.g. PLC Panel Design, FAT Staging, Switchgear Upgrade", "message": "Project Requirements / RFQ Details", "messagePlaceholder": "Please describe your automation, panel assembly, or E&I requirements...", "submit": "Submit Inquiry" },
+    "locations": { "title": "Our Locations", "headOffice": "Head Office", "factory": "Factory & Workshop" },
+    "banner": { "title": "BUILDING SMARTER INDUSTRIAL OPERATIONS TOGETHER", "subtitle": "COMPLETE AUTOMATION SOLUTIONS. RELIABLE PARTNER. LASTING IMPACT.", "copy": "From concept and engineering to installation, commissioning, and long-term support, ACS delivers reliable automation and control solutions.", "bottom": "AUTO-CONTROL SYNERGY SERVICES (ACS)", "bottomTag": "AUTOMATION TODAY. SMARTER TOMORROW." }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "home": "Home"
+  }
+}

@@ -189,6 +189,16 @@
   gap: 16px;
 }
 
+:global(html[dir="rtl"]) .navContainer {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+:global(html[dir="rtl"]) .brandBanner {
+  left: auto;
+  right: 32px;
+}
+
 .ctaButton {
   display: inline-flex;
   align-items: center;
@@ -259,6 +269,12 @@
     width: 300px;
     height: 76px;
     padding: 8px 14px;
+  }
+
+  :global(html[dir="rtl"]) .topState .brandBanner,
+  :global(html[dir="rtl"]) .scrolled .brandBanner {
+    left: auto;
+    right: 16px;
   }
   .topState .logoImg {
     width: 250px;
@@ -369,6 +385,12 @@
     padding-left: 6px;
   }
 
+  :global(html[dir="rtl"]) .mobileNavLinks a:hover,
+  :global(html[dir="rtl"]) .mobileNavLinks .activeLink {
+    padding-left: 0;
+    padding-right: 6px;
+  }
+
   .mobileCtaWrapper {
     width: 100%;
   }
@@ -385,4 +407,3 @@
     text-decoration: none;
   }
 }
-

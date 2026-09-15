@@ -44,6 +44,11 @@
   margin-bottom: 16px;
 }
 
+:global(html[dir="rtl"]) .crBox {
+  border-left: 0;
+  border-right: 3px solid var(--secondary-color, #c11f24);
+}
+
 .isoBadges {
   display: flex;
   gap: 8px;
@@ -83,6 +88,12 @@
   background-color: var(--secondary-color, #c11f24);
 }
 
+:global(html[dir="rtl"]) .linkCol h4::after,
+:global(html[dir="rtl"]) .contactCol h4::after {
+  left: auto;
+  right: 0;
+}
+
 .linkCol ul {
   display: flex;
   flex-direction: column;
@@ -98,6 +109,11 @@
 .linkCol a:hover {
   color: #ffffff;
   padding-left: 4px;
+}
+
+:global(html[dir="rtl"]) .linkCol a:hover {
+  padding-left: 0;
+  padding-right: 4px;
 }
 
 .contactItem {
@@ -210,5 +226,4 @@
     justify-content: center;
   }
 }
-
 

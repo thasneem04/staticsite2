@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import styles from './Navbar.module.css';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Menu, X } from "lucide-react";
+import styles from "./Navbar.module.css";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const isArabic = location.pathname === "/ar" || location.pathname.startsWith("/ar/");
+  const localizedPath = (path) => (isArabic ? (path === "/" ? "/ar/" : `/ar${path}`) : path);
+  const isActive = (path) => location.pathname === localizedPath(path);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,8 +20,8 @@ const Navbar = () => {
     };
 
     handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -23,14 +29,20 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : styles.topState}`}>
+    <header
+      className={`${styles.header} ${isScrolled ? styles.scrolled : styles.topState}`}
+    >
       <div className={styles.headerInner}>
         {/* Single ACS Brand Element: Hanging banner at top -> smoothly transforms to navbar logo */}
         <div className={styles.brandBanner}>
-          <Link to="/" className={styles.logoLink} aria-label="Auto-Control Synergy Services">
-            <img 
-              src="/logo_acs_clean.png" 
-              alt="Auto-Control Synergy Services" 
+          <Link
+            to={localizedPath("/")}
+            className={styles.logoLink}
+            aria-label="Auto-Control Synergy Services"
+          >
+            <img
+              src="/logo_acs_clean.png"
+              alt="Auto-Control Synergy Services"
               className={styles.logoImg}
             />
           </Link>
@@ -39,17 +51,55 @@ const Navbar = () => {
         {/* Navigation Area */}
         <nav className={styles.navContainer}>
           <ul className={styles.navLinks}>
-            <li><Link to="/" className={location.pathname === '/' ? styles.activeLink : ''}>Home</Link></li>
-            <li><Link to="/about" className={location.pathname === '/about' ? styles.activeLink : ''}>About</Link></li>
-            <li><Link to="/services" className={location.pathname === '/services' ? styles.activeLink : ''}>Services</Link></li>
-            <li><Link to="/projects" className={location.pathname === '/projects' ? styles.activeLink : ''}>Projects</Link></li>
-            <li><Link to="/contact" className={location.pathname === '/contact' ? styles.activeLink : ''}>Contact</Link></li>
+            <li>
+              <Link
+                to={localizedPath("/")}
+                className={isActive("/") ? styles.activeLink : ""}
+              >
+                {t("nav.home")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={localizedPath("/about")}
+                className={isActive("/about") ? styles.activeLink : ""}
+              >
+                {t("nav.about")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={localizedPath("/services")}
+                className={isActive("/services") ? styles.activeLink : ""}
+              >
+                {t("nav.services")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={localizedPath("/projects")}
+                className={isActive("/projects") ? styles.activeLink : ""}
+              >
+                {t("nav.projects")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={localizedPath("/contact")}
+                className={isActive("/contact") ? styles.activeLink : ""}
+              >
+                {t("nav.contact")}
+              </Link>
+            </li>
           </ul>
 
           <div className={styles.navActions}>
-            <Link to="/contact" className={styles.ctaButton}>Get in Touch</Link>
-            <button 
-              className={styles.mobileToggle} 
+            <LanguageSwitcher />
+            <Link to={localizedPath("/contact")} className={styles.ctaButton}>
+              {t("nav.cta")}
+            </Link>
+            <button
+              className={styles.mobileToggle}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle navigation menu"
             >
@@ -60,16 +110,72 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Drawer */}
-      <div className={`${styles.mobileDrawer} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>
+      <div
+        className={`${styles.mobileDrawer} ${isMobileMenuOpen ? styles.mobileOpen : ""}`}
+      >
         <ul className={styles.mobileNavLinks}>
-          <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={location.pathname === '/' ? styles.activeLink : ''}>Home</Link></li>
-          <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={location.pathname === '/about' ? styles.activeLink : ''}>About</Link></li>
-          <li><Link to="/services" onClick={() => setIsMobileMenuOpen(false)} className={location.pathname === '/services' ? styles.activeLink : ''}>Services</Link></li>
-          <li><Link to="/projects" onClick={() => setIsMobileMenuOpen(false)} className={location.pathname === '/projects' ? styles.activeLink : ''}>Projects</Link></li>
-          <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className={location.pathname === '/contact' ? styles.activeLink : ''}>Contact</Link></li>
+          <li>
+            <Link
+              to={localizedPath("/")}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={isActive("/") ? styles.activeLink : ""}
+            >
+              {t("nav.home")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={localizedPath("/about")}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={
+                isActive("/about") ? styles.activeLink : ""
+              }
+            >
+              {t("nav.about")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={localizedPath("/services")}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={
+                isActive("/services") ? styles.activeLink : ""
+              }
+            >
+              {t("nav.services")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={localizedPath("/projects")}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={
+                isActive("/projects") ? styles.activeLink : ""
+              }
+            >
+              {t("nav.projects")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={localizedPath("/contact")}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={
+                isActive("/contact") ? styles.activeLink : ""
+              }
+            >
+              {t("nav.contact")}
+            </Link>
+          </li>
         </ul>
         <div className={styles.mobileCtaWrapper}>
-          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className={styles.mobileCtaButton}>Get in Touch</Link>
+          <Link
+            to={localizedPath("/contact")}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={styles.mobileCtaButton}
+          >
+            {t("nav.cta")}
+          </Link>
         </div>
       </div>
     </header>
@@ -77,4 +183,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

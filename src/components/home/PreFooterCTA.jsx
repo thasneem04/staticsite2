@@ -1,9 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, ArrowRight } from 'lucide-react';
-import styles from './PreFooterCTA.module.css';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { Mail, ArrowRight } from "lucide-react";
+import styles from "./PreFooterCTA.module.css";
 
 const PreFooterCTA = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.ctaSection}>
       <div className={`container ${styles.ctaContainer}`}>
@@ -12,13 +15,13 @@ const PreFooterCTA = () => {
             <Mail size={22} />
           </div>
           <div>
-            <h2>Let's Discuss Your Next Automation Project</h2>
-            <p>Share your technical requirements and our engineering team will get back to you promptly.</p>
+            <h2>{t("home.cta.title")}</h2>
+            <p>{t("home.cta.subtitle")}</p>
           </div>
         </div>
         <div className={styles.actionCol}>
           <Link to="/contact" className={styles.actionBtn}>
-            Request Consultation <ArrowRight size={18} />
+            {t("home.cta.button")} <ArrowRight size={18} />
           </Link>
         </div>
       </div>
