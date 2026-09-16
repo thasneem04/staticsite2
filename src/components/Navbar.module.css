@@ -254,6 +254,12 @@
   display: none;
 }
 
+/* LanguageSwitcher: visible in the top bar only on desktop */
+.desktopOnlySwitcher {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
@@ -294,6 +300,11 @@
     display: none;
   }
 
+  /* Hide the language switcher from the top bar on mobile — it lives in the drawer */
+  .desktopOnlySwitcher {
+    display: none;
+  }
+
   .mobileToggle {
     display: flex;
     align-items: center;
@@ -301,36 +312,43 @@
   }
 
   .topState {
-    height: 76px;
+    height: 72px;
   }
 
   .scrolled {
-    height: 64px;
+    height: 60px;
   }
 
-  /* Compact Hanging Banner on Mobile */
+  /* Compact Hanging Banner on Mobile — narrower so it never overlaps the hamburger */
   .topState .brandBanner {
     left: 16px;
     top: 0;
-    width: 230px;
-    height: 66px;
-    padding: 8px 12px;
+    width: 180px;
+    height: 62px;
+    padding: 6px 10px;
     border-radius: 0 0 6px 6px;
   }
 
   .topState .logoImg {
-    width: 195px;
+    width: 155px;
   }
 
   .scrolled .brandBanner {
     left: 16px;
-    top: 10px;
-    width: 170px;
+    top: 8px;
+    width: 150px;
     height: 44px;
   }
 
   .scrolled .logoImg {
-    width: 150px;
+    width: 130px;
+  }
+
+  /* RTL: mirror the banner to right side */
+  :global(html[dir="rtl"]) .topState .brandBanner,
+  :global(html[dir="rtl"]) .scrolled .brandBanner {
+    left: auto;
+    right: 16px;
   }
 
   /* Mobile Drawer Dropdown */
@@ -382,13 +400,21 @@
   .mobileNavLinks a:hover,
   .mobileNavLinks .activeLink {
     color: var(--primary-color, #0b4a36);
-    padding-left: 6px;
+    padding-inline-start: 6px;
   }
 
-  :global(html[dir="rtl"]) .mobileNavLinks a:hover,
-  :global(html[dir="rtl"]) .mobileNavLinks .activeLink {
-    padding-left: 0;
-    padding-right: 6px;
+  /* Language switcher row inside the mobile drawer */
+  .mobileSwitcherWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+  }
+
+  :global(html[dir="rtl"]) .mobileSwitcherWrapper {
+    justify-content: flex-end;
   }
 
   .mobileCtaWrapper {

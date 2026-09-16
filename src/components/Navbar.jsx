@@ -94,7 +94,7 @@ const Navbar = () => {
           </ul>
 
           <div className={styles.navActions}>
-            <LanguageSwitcher />
+            <span className={styles.desktopOnlySwitcher}><LanguageSwitcher /></span>
             <Link to={localizedPath("/contact")} className={styles.ctaButton}>
               {t("nav.cta")}
             </Link>
@@ -168,6 +168,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <div className={styles.mobileSwitcherWrapper}><LanguageSwitcher /></div>
         <div className={styles.mobileCtaWrapper}>
           <Link
             to={localizedPath("/contact")}
