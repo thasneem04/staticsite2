@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=IBM+Plex+Arabic:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* Brand Colors extracted from logo and PDF */
@@ -50,15 +50,61 @@ body {
   overflow-x: hidden;
 }
 
-html[dir="rtl"] body {
-  text-align: start;
+/* ===========================
+   RTL / Arabic Typography
+   =========================== */
+
+/* Apply Arabic font system-wide in RTL mode */
+html[dir="rtl"] {
+  font-family: 'IBM Plex Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
 }
 
+html[dir="rtl"] body {
+  text-align: start;
+  direction: rtl;
+}
+
+/* Arabic headings: more open letter-spacing, slightly relaxed line-height */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: 'IBM Plex Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0; /* Arabic script does not benefit from negative tracking */
+  line-height: 1.35;
+}
+
+/* Arabic paragraphs: slightly more line height for readability */
+html[dir="rtl"] p {
+  font-family: 'IBM Plex Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+/* Forms RTL */
 html[dir="rtl"] input,
 html[dir="rtl"] textarea,
 html[dir="rtl"] select {
   text-align: start;
+  direction: rtl;
+  font-family: 'IBM Plex Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
 }
+
+/* Buttons in RTL */
+html[dir="rtl"] button,
+html[dir="rtl"] a {
+  font-family: 'IBM Plex Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Keep technical terms (PLC, SCADA, ISO, etc.) in LTR direction when mixed with Arabic */
+html[dir="rtl"] .ltr-text {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
