@@ -14,9 +14,11 @@ import {
   Cpu,
 } from "lucide-react";
 import styles from "./Services.module.css";
+import SEO from "../components/SEO";
 
 const Services = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === "ar" ? "/ar" : "";
   const coreServices = [
     {
       id: 1,
@@ -67,6 +69,7 @@ const Services = () => {
 
   return (
     <div className={styles.servicesPage}>
+      <SEO title={t("seo.servicesTitle")} description={t("seo.servicesDesc")} path={`${prefix}/services`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
         <div
@@ -93,7 +96,7 @@ const Services = () => {
               <p>{t("services.intro.p2")}</p>
               <img
                 src="/images/services.jpg"
-                alt="PLC Automation Panel"
+                alt={t("images.services")}
                 className={styles.introImage}
               />
             </div>
@@ -266,7 +269,7 @@ const Services = () => {
             <div className={styles.amcImage}>
               <img
                 src="/images/amc_diagnostic.jpg"
-                alt="ACS PLC Diagnostic & Testing"
+                alt={t("images.diagnostics")}
               />
             </div>
           </div>

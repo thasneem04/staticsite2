@@ -112,7 +112,7 @@
    ========================================================================== */
 
 .navContainer {
-  margin-left: auto;
+  margin-inline-start: auto;
   display: flex;
   align-items: center;
   gap: 36px;
@@ -190,8 +190,8 @@
 }
 
 :global(html[dir="rtl"]) .navContainer {
-  margin-left: 0;
-  margin-right: auto;
+  margin-inline-start: 0;
+  margin-inline-end: auto;
 }
 
 :global(html[dir="rtl"]) .brandBanner {

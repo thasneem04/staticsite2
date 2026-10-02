@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import Hero from '../components/home/Hero';
 import CompanyIntro from '../components/home/CompanyIntro';
 import TrustValue from '../components/home/TrustValue';
@@ -16,8 +18,11 @@ import WhyChooseACS from '../components/home/WhyChooseACS';
 import PreFooterCTA from '../components/home/PreFooterCTA';
 
 const Home = () => {
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === 'ar' ? '/ar' : '';
   return (
     <div className="home-page-grand-redesign">
+      <SEO title={t('seo.homeTitle')} description={t('seo.homeDesc')} path={`${prefix}/`} />
       <Hero />
       <CompanyIntro />
       <TrustValue />

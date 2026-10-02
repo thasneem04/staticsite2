@@ -12,13 +12,17 @@ import {
   Zap,
 } from "lucide-react";
 import styles from "./About.module.css";
+import SEO from "../components/SEO";
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === "ar" ? "/ar" : "";
   const clients = t("about.clients.list", { returnObjects: true });
+  const parentCompanyCards = t("about.parentCompany.cards", { returnObjects: true });
 
   return (
     <div className={styles.aboutPage}>
+      <SEO title={t("seo.aboutTitle")} description={t("seo.aboutDesc")} path={`${prefix}/about`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
         <div
@@ -68,7 +72,7 @@ const About = () => {
           <div className={styles.introImage}>
             <img
               src="/images/facility.jpg"
-              alt="ACS Panel Manufacturing Facility"
+              alt={t("images.about")}
             />
           </div>
         </div>
@@ -128,38 +132,16 @@ const About = () => {
           </div>
 
           <div className={styles.parentGrid}>
-            <div className={styles.parentCard}>
-              <Factory size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.0")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <Cpu size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.1")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <Zap size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.2")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <Shield size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.3")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <TrendingUp size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.4")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <Users size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.5")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <Award size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.6")}</h4>
-            </div>
-            <div className={styles.parentCard}>
-              <CheckCircle2 size={28} className="text-primary" />
-              <h4>{t("about.parentCompany.cards.7")}</h4>
-            </div>
+            {parentCompanyCards.map((card, index) => {
+              const icons = [Factory, Cpu, Zap, Shield, TrendingUp, Users, Award, CheckCircle2];
+              const Icon = icons[index % icons.length];
+              return (
+                <div className={styles.parentCard} key={`${index}-${card}`}>
+                  <Icon size={28} className="text-primary" />
+                  <h4>{card}</h4>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

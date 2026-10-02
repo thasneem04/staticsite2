@@ -68,7 +68,7 @@ const ElectricalInstrumentation = () => {
             <div className={styles.imageWrapper}>
               <img
                 src="/images/electrical_hv.jpg"
-                alt="High Voltage Electrical Switchgear"
+                alt={t("images.highVoltage")}
               />
               <div className={styles.statsOverlay}>
                 <div className={styles.statBox}>
@@ -76,7 +76,7 @@ const ElectricalInstrumentation = () => {
                   <span>{t("home.electrical.statsInstalled")}</span>
                 </div>
                 <div className={styles.statBox}>
-                  <strong>Zero</strong>
+                  <strong>{t("home.electrical.zeroValue")}</strong>
                   <span>{t("home.electrical.statsSafety")}</span>
                 </div>
               </div>

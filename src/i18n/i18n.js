@@ -4,8 +4,11 @@ import { initReactI18next } from 'react-i18next';
 import en from './locales/en.json';
 import ar from './locales/ar.json';
 
+const routeLanguage = typeof window !== 'undefined'
+  ? (/^\/ar(?:\/|$)/.test(window.location.pathname) ? 'ar' : 'en')
+  : null;
 const savedLanguage = typeof window !== 'undefined' ? localStorage.getItem('acs-language') : null;
-const defaultLanguage = savedLanguage || 'en';
+const defaultLanguage = routeLanguage || savedLanguage || 'en';
 
 i18n
   .use(initReactI18next)
@@ -15,7 +18,8 @@ i18n
       ar: { translation: ar }
     },
     lng: defaultLanguage,
-    fallbackLng: 'en',
+    // Arabic pages must never silently display English when a key is missing.
+    fallbackLng: false,
     interpolation: {
       escapeValue: false // React already escapes values
     }

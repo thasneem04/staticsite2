@@ -64,6 +64,16 @@ html[dir="rtl"] body {
   direction: rtl;
 }
 
+html[dir="rtl"] .lucide-arrow-right,
+html[dir="rtl"] .lucide-chevron-right {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] :is(input[type="email"], input[type="tel"], input[type="url"], code, .ltr-text) {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 /* Arabic headings: more open letter-spacing, slightly relaxed line-height */
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
@@ -254,4 +264,3 @@ img {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(193, 31, 36, 0.35);
 }
-

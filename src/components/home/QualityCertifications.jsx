@@ -12,7 +12,7 @@ const QualityCertifications = () => {
         <div className={`${styles.imageCol} animate-fade-in`}>
           <img
             src="/images/quality_certs.jpg"
-            alt="QA Engineer inspecting panel"
+            alt={t("images.quality")}
             className={styles.qaImage}
           />
         </div>

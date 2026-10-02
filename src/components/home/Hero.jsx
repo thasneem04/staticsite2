@@ -11,7 +11,7 @@ import {
 import styles from "./Hero.module.css";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={styles.hero}>
@@ -28,10 +28,10 @@ const Hero = () => {
             {t("home.hero.desc")}
           </p>
           <div className={`${styles.heroBtns} animate-fade-up delay-300`}>
-            <Link to="/services" className={styles.primaryBtn}>
+          <Link to={i18n.language === "ar" ? "/ar/services" : "/services"} className={styles.primaryBtn}>
               {t("home.hero.explore")} <ArrowRight size={18} />
             </Link>
-            <Link to="/contact" className={styles.secondaryBtn}>
+          <Link to={i18n.language === "ar" ? "/ar/contact" : "/contact"} className={styles.secondaryBtn}>
               {t("home.hero.request")}
             </Link>
           </div>

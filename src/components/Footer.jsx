@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Award } from "lucide-react";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const isArabic = pathname === "/ar" || pathname.startsWith("/ar/");
   const localizedPath = (path) => (isArabic ? (path === "/" ? "/ar/" : `/ar${path}`) : path);
@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={styles.logoBox}>
             <img
               src="/logo_acs_clean.png"
-              alt="Auto-Control Synergy Services (ACS)"
+              alt={t("images.logo")}
               className={styles.footerLogo}
             />
           </div>
@@ -115,7 +115,7 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <div className={`container ${styles.bottomInner}`}>
           <p className={styles.copyrightText}>
-            &copy; 2026 Auto-Control Synergy Services (ACS).{" "}
+            &copy; 2026 {i18n.language === "ar" ? `(${t("companyName")})` : t("companyName")}.{" "}
             {t("footer.rights")}
             <span className={styles.attributionDivider}>·</span>
             <span className={styles.poweredBy}>

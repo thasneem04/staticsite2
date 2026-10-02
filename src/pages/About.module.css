@@ -84,7 +84,7 @@
   margin-top: 30px;
   padding: 15px 20px;
   background-color: var(--bg-gray);
-  border-left: 4px solid var(--secondary-color);
+  border-inline-start: 4px solid var(--secondary-color);
   font-size: 1.05rem;
 }
 

@@ -65,7 +65,7 @@ const ExpertiseGrid = () => {
             <div className={styles.imageWrapper}>
               <img
                 src="/images/tech_expertise.jpg"
-                alt="DCS Marshalling Cabinet Wiring"
+              alt={t("images.expertise")}
               />
               <div className={styles.imageOverlay}>
                 <div className={styles.overlayText}>

@@ -5,7 +5,8 @@
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact",
-    "cta": "Get in Touch"
+    "cta": "Get in Touch",
+    "menu": "Open navigation menu"
   },
   "footer": {
     "quickLinks": "Quick Links",
@@ -197,7 +198,8 @@
         "Signal & Control Cabling",
         "Fiber Optic Cabling",
         "Calibration & Testing"
-      ]
+      ],
+      "zeroValue": "Zero"
     },
     "projectsShowcase": {
       "eyebrow": "PROVEN TRACK RECORD",
@@ -956,5 +958,18 @@
     "home": "Return to Home"
   },
   "companyName": "ACS Arabia",
-  "companyNameFull": "Auto-Control Synergy Services (ACS Arabia)"
+  "companyNameFull": "Auto-Control Synergy Services (ACS Arabia)",
+  "images": {
+    "logo": "Auto-Control Synergy Services logo",
+    "switcher": "Language selector",
+    "highVoltage": "High-voltage electrical switchgear",
+    "expertise": "DCS marshalling cabinet wiring",
+    "facility": "ACS manufacturing facility",
+    "quality": "Quality engineer inspecting a control panel",
+    "about": "Control panel manufacturing facility",
+    "projects": "Industrial project site",
+    "services": "PLC automation panel",
+    "diagnostics": "PLC diagnostic and testing equipment",
+    "social": "Industrial facility and automation and control solutions"
+  }
 }

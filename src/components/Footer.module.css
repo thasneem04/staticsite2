@@ -40,13 +40,13 @@
   background: rgba(255, 255, 255, 0.06);
   padding: 8px 12px;
   border-radius: 4px;
-  border-left: 3px solid var(--secondary-color, #c11f24);
+  border-inline-start: 3px solid var(--secondary-color, #c11f24);
   margin-bottom: 16px;
 }
 
 :global(html[dir="rtl"]) .crBox {
-  border-left: 0;
-  border-right: 3px solid var(--secondary-color, #c11f24);
+  border-inline-start: 0;
+  border-inline-end: 3px solid var(--secondary-color, #c11f24);
 }
 
 .isoBadges {
@@ -108,12 +108,12 @@
 
 .linkCol a:hover {
   color: #ffffff;
-  padding-left: 4px;
+  padding-inline-start: 4px;
 }
 
 :global(html[dir="rtl"]) .linkCol a:hover {
-  padding-left: 0;
-  padding-right: 4px;
+  padding-inline-start: 0;
+  padding-inline-end: 4px;
 }
 
 .contactItem {

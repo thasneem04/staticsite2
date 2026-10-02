@@ -14,7 +14,7 @@ const FacilityTechnology = () => {
             <div className={styles.overlay}></div>
             <img
               src="/images/facility_grand.jpg"
-              alt="ACS State of the Art Facility"
+                alt={t("images.facility")}
               className={styles.mainImg}
             />
 

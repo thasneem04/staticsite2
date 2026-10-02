@@ -38,11 +38,11 @@ const Navbar = () => {
           <Link
             to={localizedPath("/")}
             className={styles.logoLink}
-            aria-label="Auto-Control Synergy Services"
+            aria-label={t("companyName")}
           >
             <img
               src="/logo_acs_clean.png"
-              alt="Auto-Control Synergy Services"
+              alt={t("images.logo")}
               className={styles.logoImg}
             />
           </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
             <button
               className={styles.mobileToggle}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle navigation menu"
+              aria-label={t("nav.menu")}
             >
               {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>

@@ -7,9 +7,10 @@ const SEO = ({ title, description, path, schema }) => {
   const url = `${siteUrl}${path}`;
   const defaultImage = `${siteUrl}/images/hero_grand.webp`;
 
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const lang = i18n.language || 'en';
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
+  const siteName = lang === 'ar' ? 'شركة تازز للتحكم آلي الصناعية' : 'ACS Arabia';
 
   return (
     <Helmet htmlAttributes={{ lang, dir }}>
@@ -24,12 +25,13 @@ const SEO = ({ title, description, path, schema }) => {
       <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${path.replace(/^\/ar/, '') || '/'}`} />
 
       {/* Open Graph / Facebook */}
-      <meta property="og:site_name" content="Auto-Control Synergy Services" />
+      <meta property="og:site_name" content={siteName} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={defaultImage} />
+      <meta property="og:image:alt" content={t('images.social')} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import styles from "./CompanyIntro.module.css";
 
 const CompanyIntro = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={`section-lg ${styles.introSection}`}>
@@ -28,7 +28,7 @@ const CompanyIntro = () => {
             <p className={styles.leadText}>{t("home.companyIntro.lead")}</p>
             <p className={styles.subText}>{t("home.companyIntro.sub")}</p>
 
-            <Link to="/about" className={styles.exploreLink}>
+          <Link to={i18n.language === "ar" ? "/ar/about" : "/about"} className={styles.exploreLink}>
               {t("home.companyIntro.link")} <ChevronRight size={18} />
             </Link>
           </div>
@@ -37,7 +37,7 @@ const CompanyIntro = () => {
         <div className={styles.imageGrid}>
           <div className={`${styles.mainImage} animate-scale-in`}>
             <div className={styles.imgDeco}></div>
-            <img src="/images/about.jpg" alt="ACS Engineer at Control Panel" />
+            <img src="/images/about.jpg" alt={t("images.about")} />
           </div>
           <div className={`${styles.floatingStats} animate-fade-up delay-300`}>
             <div className={styles.statItem}>

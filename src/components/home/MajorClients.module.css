@@ -92,15 +92,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #f1f5f9;
+  border-inline-end: 1px solid #f1f5f9;
   border-bottom: 1px solid #f1f5f9;
   min-height: 110px;
   background: #ffffff;
 }
 
 /* Remove right borders for last column */
-.grid4 .logoCell:nth-child(4n) { border-right: none; }
-.grid5 .logoCell:nth-child(5n) { border-right: none; }
+.grid4 .logoCell:nth-child(4n) { border-inline-end: none; }
+.grid5 .logoCell:nth-child(5n) { border-inline-end: none; }
 
 /* Remove bottom borders for last row */
 .grid4 .logoCell:nth-last-child(-n+4) { border-bottom: none; }
@@ -190,11 +190,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .grid4 .logoCell, .grid5 .logoCell {
-    border-right: 1px solid #f1f5f9;
+    border-inline-end: 1px solid #f1f5f9;
     border-bottom: 1px solid #f1f5f9;
   }
   .grid4 .logoCell:nth-child(3n), .grid5 .logoCell:nth-child(3n) {
-    border-right: none;
+    border-inline-end: none;
   }
   .trustRow {
     flex-wrap: wrap;
@@ -207,10 +207,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .grid4 .logoCell, .grid5 .logoCell {
-    border-right: 1px solid #f1f5f9;
+    border-inline-end: 1px solid #f1f5f9;
   }
   .grid4 .logoCell:nth-child(even), .grid5 .logoCell:nth-child(even) {
-    border-right: none;
+    border-inline-end: none;
   }
   .tierTitle { font-size: 1.4rem; }
   .tierTitleSmall { font-size: 1.1rem; }

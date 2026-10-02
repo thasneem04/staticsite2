@@ -213,7 +213,7 @@
 .projectTable {
   width: 100%;
   border-collapse: collapse;
-  text-align: left;
+  text-align: start;
 }
 
 .projectTable th {

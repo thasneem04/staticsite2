@@ -2,12 +2,15 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Building2, Factory } from "lucide-react";
 import styles from "./Contact.module.css";
+import SEO from "../components/SEO";
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === "ar" ? "/ar" : "";
 
   return (
     <div className={styles.contactPage}>
+      <SEO title={t("seo.contactTitle")} description={t("seo.contactDesc")} path={`${prefix}/contact`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
         <div
@@ -123,6 +126,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  dir="ltr"
                   placeholder={t("contact.form.emailPlaceholder")}
                   required
                 />

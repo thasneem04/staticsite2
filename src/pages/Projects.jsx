@@ -2,9 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { CheckCircle, MapPin, Users, Calendar } from "lucide-react";
 import styles from "./Projects.module.css";
+import SEO from "../components/SEO";
 
 const Projects = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === "ar" ? "/ar" : "";
   const projects = t("projects.showcase.items", { returnObjects: true });
   const panelSolutions = t("projects.panelSolutions.list", {
     returnObjects: true,
@@ -12,6 +14,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsPage}>
+      <SEO title={t("seo.projectsTitle")} description={t("seo.projectsDesc")} path={`${prefix}/projects`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
         <div
@@ -41,7 +44,7 @@ const Projects = () => {
             <div className={styles.featuredImageWrapper}>
               <img
                 src="/images/projects.jpg"
-                alt="Industrial Project Site"
+                alt={t("images.projects")}
                 className={styles.featuredImage}
               />
             </div>

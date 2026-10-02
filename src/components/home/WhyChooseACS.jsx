@@ -5,7 +5,7 @@ import { Award, Factory, ShieldCheck, Clock, ArrowRight } from "lucide-react";
 import styles from "./WhyChooseACS.module.css";
 
 const WhyChooseACS = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={`section-lg ${styles.whySection}`}>
@@ -17,7 +17,7 @@ const WhyChooseACS = () => {
             <h2>{t("home.whyChoose.title")}</h2>
             <p className={styles.leadPara}>{t("home.whyChoose.lead")}</p>
             <p className={styles.subPara}>{t("home.whyChoose.sub")}</p>
-            <Link to="/about" className={styles.learnMoreBtn}>
+            <Link to={i18n.language === "ar" ? "/ar/about" : "/about"} className={styles.learnMoreBtn}>
               {t("home.whyChoose.link")} <ArrowRight size={18} />
             </Link>
           </div>

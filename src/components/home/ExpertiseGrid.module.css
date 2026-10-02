@@ -89,7 +89,7 @@
 .projectHighlightsBox {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-left: 4px solid var(--primary-color, #0b4a36);
+  border-inline-start: 4px solid var(--primary-color, #0b4a36);
   padding: 24px;
   border-radius: 8px;
 }

@@ -79,7 +79,7 @@
 
 .serviceCard ul li {
   position: relative;
-  padding-left: 20px;
+  padding-inline-start: 20px;
   color: var(--text-light);
   font-size: 1rem;
 }
@@ -102,7 +102,7 @@
   font-size: 0.95rem;
   color: var(--text-light);
   position: relative;
-  padding-left: 16px;
+  padding-inline-start: 16px;
 }
 
 .lcGrid span::before {
@@ -151,7 +151,7 @@
 }
 
 .statBox:first-child {
-  border-right: 1px solid rgba(255,255,255,0.2);
+  border-inline-end: 1px solid rgba(255,255,255,0.2);
 }
 
 .statBox strong {

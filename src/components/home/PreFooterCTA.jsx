@@ -5,7 +5,7 @@ import { Mail, ArrowRight } from "lucide-react";
 import styles from "./PreFooterCTA.module.css";
 
 const PreFooterCTA = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={styles.ctaSection}>
@@ -20,7 +20,7 @@ const PreFooterCTA = () => {
           </div>
         </div>
         <div className={styles.actionCol}>
-          <Link to="/contact" className={styles.actionBtn}>
+          <Link to={i18n.language === "ar" ? "/ar/contact" : "/contact"} className={styles.actionBtn}>
             {t("home.cta.button")} <ArrowRight size={18} />
           </Link>
         </div>
