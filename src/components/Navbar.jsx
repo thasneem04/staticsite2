@@ -10,8 +10,10 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isArabic = location.pathname === "/ar" || location.pathname.startsWith("/ar/");
-  const localizedPath = (path) => (isArabic ? (path === "/" ? "/ar/" : `/ar${path}`) : path);
+  const isArabic =
+    location.pathname === "/ar" || location.pathname.startsWith("/ar/");
+  const localizedPath = (path) =>
+    isArabic ? (path === "/" ? "/ar/" : `/ar${path}`) : path;
   const isActive = (path) => location.pathname === localizedPath(path);
 
   useEffect(() => {
@@ -30,7 +32,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`${styles.header} site-header ${isScrolled ? styles.scrolled : styles.topState}`}
+      className={`${styles.header} site-header ${isScrolled ? "site-header-scrolled" : "site-header-top"} ${isScrolled ? styles.scrolled : styles.topState}`}
     >
       <div className={`${styles.headerInner} site-header-inner`}>
         {/* Single ACS Brand Element: Hanging banner at top -> smoothly transforms to navbar logo */}
@@ -94,7 +96,11 @@ const Navbar = () => {
           </ul>
 
           <div className={`${styles.navActions} site-header-actions`}>
-            <span className={`${styles.desktopOnlySwitcher} site-language-control`}><LanguageSwitcher /></span>
+            <span
+              className={`${styles.desktopOnlySwitcher} site-language-control`}
+            >
+              <LanguageSwitcher />
+            </span>
             <Link to={localizedPath("/contact")} className={styles.ctaButton}>
               {t("nav.cta")}
             </Link>
@@ -132,9 +138,7 @@ const Navbar = () => {
             <Link
               to={localizedPath("/about")}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={
-                isActive("/about") ? styles.activeLink : ""
-              }
+              className={isActive("/about") ? styles.activeLink : ""}
             >
               {t("nav.about")}
             </Link>
@@ -143,9 +147,7 @@ const Navbar = () => {
             <Link
               to={localizedPath("/services")}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={
-                isActive("/services") ? styles.activeLink : ""
-              }
+              className={isActive("/services") ? styles.activeLink : ""}
             >
               {t("nav.services")}
             </Link>
@@ -154,9 +156,7 @@ const Navbar = () => {
             <Link
               to={localizedPath("/projects")}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={
-                isActive("/projects") ? styles.activeLink : ""
-              }
+              className={isActive("/projects") ? styles.activeLink : ""}
             >
               {t("nav.projects")}
             </Link>
@@ -165,15 +165,15 @@ const Navbar = () => {
             <Link
               to={localizedPath("/contact")}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={
-                isActive("/contact") ? styles.activeLink : ""
-              }
+              className={isActive("/contact") ? styles.activeLink : ""}
             >
               {t("nav.contact")}
             </Link>
           </li>
         </ul>
-        <div className={styles.mobileSwitcherWrapper}><LanguageSwitcher /></div>
+        <div className={styles.mobileSwitcherWrapper}>
+          <LanguageSwitcher />
+        </div>
         <div className={styles.mobileCtaWrapper}>
           <Link
             to={localizedPath("/contact")}
