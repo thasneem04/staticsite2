@@ -26,6 +26,7 @@ const AppRoutes = () => {
 
   const renderRoutes = (prefix = "") => (
     <>
+      {prefix ? <Route path={prefix} element={<Home />} /> : null}
       <Route path={`${prefix}/`} element={<Home />} />
       <Route path={`${prefix}/about`} element={<About />} />
       <Route path={`${prefix}/services`} element={<Services />} />
