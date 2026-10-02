@@ -23,15 +23,27 @@ const Hero = () => {
           <div className={`${styles.badge} home-hero-badge animate-fade-up`}>
             {t("home.hero.badge")}
           </div>
-          <h1 className="home-hero-title animate-fade-up delay-100">{t("home.hero.title")}</h1>
-          <p className={`${styles.heroDesc} home-hero-description animate-fade-up delay-200`}>
+          <h1 className="home-hero-title animate-fade-up delay-100">
+            {t("home.hero.title")}
+          </h1>
+          <p
+            className={`${styles.heroDesc} home-hero-description animate-fade-up delay-200`}
+          >
             {t("home.hero.desc")}
           </p>
-          <div className={`${styles.heroBtns} home-hero-buttons animate-fade-up delay-300`}>
-          <Link to={i18n.language === "ar" ? "/ar/services" : "/services"} className={styles.primaryBtn}>
+          <div
+            className={`${styles.heroBtns} home-hero-buttons animate-fade-up delay-300`}
+          >
+            <Link
+              to={i18n.language === "ar" ? "/ar/services" : "/services"}
+              className={styles.primaryBtn}
+            >
               {t("home.hero.explore")} <ArrowRight size={18} />
             </Link>
-          <Link to={i18n.language === "ar" ? "/ar/contact" : "/contact"} className={styles.secondaryBtn}>
+            <Link
+              to={i18n.language === "ar" ? "/ar/contact" : "/contact"}
+              className={styles.secondaryBtn}
+            >
               {t("home.hero.request")}
             </Link>
           </div>
@@ -77,12 +89,6 @@ const Hero = () => {
               <span>{t("home.hero.metricSafety")}</span>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className={`${styles.scrollIndicator} animate-fade-in delay-500`}>
-        <div className={styles.mouse}>
-          <div className={styles.wheel}></div>
         </div>
       </div>
     </section>

@@ -181,51 +181,6 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-.scrollIndicator {
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 52px;
-}
-
-.mouse {
-  width: 26px;
-  height: 44px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.wheel {
-  width: 3px;
-  height: 7px;
-  background-color: white;
-  border-radius: 2px;
-  position: absolute;
-  top: 9px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scroll 1.5s infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, 15px);
-    opacity: 0;
-  }
-}
-
 @media (max-width: 900px) {
   .metricsRibbon {
     flex-direction: column;
