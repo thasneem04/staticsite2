@@ -356,7 +356,33 @@
       "eyebrow": "MANUFACTURING EXCELLENCE",
       "title": "Our Panel Solutions",
       "subtitle": "Custom-built control panels and cabinets engineered to international standards in our Dammam facility.",
-      "link": "View full manufacturing & engineering capabilities"
+      "link": "View full manufacturing & engineering capabilities",
+      "panels": [
+        {
+          "name": "PLC Panels",
+          "type": "Automation & Process Control"
+        },
+        {
+          "name": "Busbar Protection Panels",
+          "type": "Grid & Substation Protection"
+        },
+        {
+          "name": "VFD Panels",
+          "type": "Motor & Drive Speed Control"
+        },
+        {
+          "name": "Busbar Protection Panels (Sec)",
+          "type": "Relay & Isolation Systems"
+        },
+        {
+          "name": "Transformer Protection Panels",
+          "type": "High-Voltage Asset Protection"
+        },
+        {
+          "name": "Annunciator Panels",
+          "type": "Audible & Visual Alarm Matrix"
+        }
+      ]
     },
     "quality": {
       "eyebrow": "QUALITY ASSURANCE",
@@ -415,6 +441,22 @@
       "eyebrow": "MAJOR CLIENTS & PARTNERS",
       "title": "Trusted by Leading Organizations",
       "subtitle": "Redaa Developing Company & ACS Arabia — Trusted across Oil & Gas, Energy, and Process industries."
+    },
+    "majorClients": {
+      "tier1": "MAJOR CLIENTS",
+      "tier2": "Under the Approval of",
+      "tier3": "Major Brands and Suppliers",
+      "andMore": "And many more",
+      "trust": {
+        "t1": "TRUSTED BY",
+        "s1": "Leading Organizations",
+        "t2": "QUALITY PRODUCTS",
+        "s2": "& Solutions",
+        "t3": "DELIVERING EXCELLENCE",
+        "s3": "Across Industries",
+        "t4": "PROVEN TRACK RECORD",
+        "s4": "Of Successful Deliveries"
+      }
     }
   },
   "about": {
