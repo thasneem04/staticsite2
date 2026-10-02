@@ -55,7 +55,8 @@
       "metricEstablished": "Established in KSA",
       "metricCapacity": "Cabinet Staging Capacity",
       "metricIso": "ISO Certified",
-      "metricSafety": "Safety Excellence Record"
+      "metricSafety": "Safety Excellence Record",
+      "metricSafetyValue": "Zero LTI"
     },
     "companyIntro": {
       "eyebrow": "Who We Are",
@@ -161,7 +162,8 @@
         "DCS & ESD System Upgrades, Hardware Engineering, Cabinet Assembly, System Staging FAT, Lead Site Installation & IO Loop Checks.",
         "SABIC Petrokemya Plant: MCC Interface Upgrade for VCM & PVC Train A&B Plants with newly designed swing frames and static frames.",
         "Field installation of Instruments, CCTV, F&G detection devices, JBs, and Stanchions."
-      ]
+      ],
+      "fatBadge": "FAT Tested in Dammam"
     },
     "electrical": {
       "eyebrow": "COMPREHENSIVE SOLUTIONS",
@@ -181,6 +183,20 @@
         "BMS",
         "Nurse Call",
         "MATV Systems"
+      ],
+      "hvItems": [
+        "13.4kV / 33kV Cable Works",
+        "HV Switchgear Replacement",
+        "Substation Installation",
+        "Power & Lighting Systems",
+        "Earth & Lightning Protection"
+      ],
+      "instrumentItems": [
+        "Instrument Installation & Hook-up",
+        "DCS Systems",
+        "Signal & Control Cabling",
+        "Fiber Optic Cabling",
+        "Calibration & Testing"
       ]
     },
     "projectsShowcase": {
@@ -198,7 +214,143 @@
       "acsProjectNo": "ACS Project No",
       "sapProjectNo": "Customer SAP No",
       "projectName": "Project Name",
-      "explore": "Explore Full Technical Project Scope"
+      "explore": "Explore Full Technical Project Scope",
+      "featuredCards": [
+        {
+          "client": "Honeywell Turki Arabia",
+          "location": "Jafurah / Riyas, KSA",
+          "year": "2024 – 2025",
+          "title": "JAFURAH DEVELOPMENT PROGRAM PHASE FRACTIONATION FACILITIES",
+          "ref": "ACS Project: SA24CA304 | SAP: SAP-0661-Jafura",
+          "desc": "Major fractionation control cabinets and instrumentation staging."
+        },
+        {
+          "client": "Schneider Electric",
+          "location": "Zuluf Field, KSA",
+          "year": "2023",
+          "title": "ZULUF ONSHORE OIL FACILITIES PROJECT",
+          "ref": "ACS Project: SA23CA210 | SAP: SA10054",
+          "desc": "ESD cabinets, power boards, and system staging FAT."
+        },
+        {
+          "client": "Honeywell Turki Arabia",
+          "location": "Ras Al-Khair, KSA",
+          "year": "2024",
+          "title": "KING SALMAN INTERNATIONAL COMPLEX FOR MARITIME INDUSTRIES",
+          "ref": "ACS Project: SA22CA098 | SAP: SAP-000494",
+          "desc": "Maritime control systems and power automation."
+        }
+      ],
+      "tableData": [
+        {
+          "sno": "01",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA276",
+          "customerSapNo": "SAP598",
+          "name": "INSTALL C3/C4 REFRIGERATION UNITS AND STORAGE TANKS AT JNGLF (JUAYMAH)",
+          "desc": "Turnkey installation, PLC automation and refrigeration control systems for C3/C4 storage tanks at Juaymah NGL Facility (JNGLF)."
+        },
+        {
+          "sno": "02",
+          "year": "2024 – 2025",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA304",
+          "customerSapNo": "SAP-0661-Jafura",
+          "name": "JAFURAH DEVELOPMENT PROGRAM PHASE FRACTIONATION FACILITIES BI 10-17537II RIYAS NGL",
+          "desc": "Process automation, instrumentation marshalling, and control cabinet integration for the Jafurah Unconventional Gas Development Program."
+        },
+        {
+          "sno": "03",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA296",
+          "customerSapNo": "SAP647",
+          "name": "RTR PLANT15 AND PLANT488/493/J24 CCR RELOCATION",
+          "desc": "Central Control Room (CCR) relocation, system cutover, DCS marshalling, and loop testing for RTR Plant 15 and Plant 488/493/J24."
+        },
+        {
+          "sno": "04",
+          "year": "2023",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA23CA152",
+          "customerSapNo": "SAP583",
+          "name": "EXPAND MARINE TERMINAL - JUAYMAH NGL FRACTIONATION PLANT - OFFSHORE PACKAGE",
+          "desc": "Offshore marine terminal expansion, ATEX certified control panels, remote telemetry integration, and safety shutdown systems."
+        },
+        {
+          "sno": "05",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia",
+          "acsProjectNo": "SA23CA210",
+          "customerSapNo": "SA10054",
+          "name": "ZULUF ONSHORE OIL FACILITIES PROJECT",
+          "desc": "Onshore oil processing facilities automation, power distribution boards, ESD cabinets assembly and FAT verification."
+        },
+        {
+          "sno": "06",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA23CA208",
+          "customerSapNo": "SA-20301",
+          "name": "UPG 110 & 33 KV JUAYMAH 11.04B 4374 & 43971 NGL 011 & 012 34.5 KV",
+          "desc": "110kV and 33kV high-voltage substation upgrade, protection relay panels, and power automation for Juaymah NGL plants."
+        },
+        {
+          "sno": "07",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA23CA206",
+          "customerSapNo": "SA-20324",
+          "name": "JUAYMAH 132/33-13.8 KV POWER TRANSFORMER (1X200MVA) REPLACEMENT FOR JUAYMAH 15 PLANT",
+          "desc": "132/33-13.8 kV 200MVA power transformer protection, control interface cabling, and testing for Juaymah 15 Plant."
+        },
+        {
+          "sno": "08",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA22CA064",
+          "customerSapNo": "SA20179",
+          "name": "MARJAN 230/13.8KV NETWORK UPGRADE PROJECT (MCC AND SWBD)",
+          "desc": "230/13.8kV electrical network upgrade, Motor Control Centre (MCC) interface modifications, and switchboard commissioning."
+        },
+        {
+          "sno": "09",
+          "year": "2023",
+          "customer": "Schneider Electric Saudi Arabia Co. Riyadh",
+          "acsProjectNo": "SA22CA073",
+          "customerSapNo": "Marjan Ph 2 -ksa",
+          "name": "Power System Automation System (PSA)",
+          "desc": "Complete Power System Automation (PSA) deployment, RTU telemetry integration, SCADA communication, and substation protocol testing."
+        },
+        {
+          "sno": "10",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA22CA098",
+          "customerSapNo": "SAP-000494",
+          "name": "KING SALMAN INTERNATIONAL COMPLEX FOR MARITIME INDUSTRIES AND SERVICES",
+          "desc": "Industrial automation, power management, and marine terminal control infrastructure at the King Salman Global Maritime Complex."
+        },
+        {
+          "sno": "11",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA21CA022",
+          "customerSapNo": "SAP-405",
+          "name": "TANAJIB OIL PLANT EXPANSION PROJECT FOR MARJAN DEVELOPMENT PROGRAM",
+          "desc": "Rittal cabinet assembly, system staging, FAT verification, and marshaling hardware integration for the Tanajib mega-plant expansion."
+        },
+        {
+          "sno": "12",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA21CA002",
+          "customerSapNo": "SAP-446",
+          "name": "BERRI DOWNSTREAM PIPELINES PROJECT",
+          "desc": "Downstream pipeline automation panels, remote RTU telemetry, valve actuation control, and field instrumentation commissioning."
+        }
+      ]
     },
     "panelSolutions": {
       "eyebrow": "MANUFACTURING EXCELLENCE",
@@ -258,6 +410,11 @@
       "title": "Let's Discuss Your Next Automation Project",
       "subtitle": "Share your technical requirements and our engineering team will get back to you promptly.",
       "button": "Request Consultation"
+    },
+    "clientsWall": {
+      "eyebrow": "MAJOR CLIENTS & PARTNERS",
+      "title": "Trusted by Leading Organizations",
+      "subtitle": "Redaa Developing Company & ACS Arabia — Trusted across Oil & Gas, Energy, and Process industries."
     }
   },
   "about": {
@@ -389,7 +546,7 @@
       "list": [
         "Saudi Aramco",
         "Saudi Electricity Company",
-        "JHAH (John Hopkins Aramco Healthcare)",
+        "JHAH (Johns Hopkins Aramco Healthcare)",
         "Siemens",
         "SABIC",
         "Petro Rabigh",

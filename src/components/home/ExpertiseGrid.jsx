@@ -70,7 +70,7 @@ const ExpertiseGrid = () => {
               <div className={styles.imageOverlay}>
                 <div className={styles.overlayText}>
                   <strong>{t("home.expertise.scopeBadge")}</strong>
-                  <span>FAT Tested in Dammam</span>
+                  <span>{t("home.expertise.fatBadge")}</span>
                 </div>
               </div>
             </div>

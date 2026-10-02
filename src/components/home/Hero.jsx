@@ -73,7 +73,7 @@ const Hero = () => {
               <CheckCircle2 size={22} />
             </div>
             <div className={styles.metricText}>
-              <strong>Zero LTI</strong>
+              <strong>{t("home.hero.metricSafetyValue")}</strong>
               <span>{t("home.hero.metricSafety")}</span>
             </div>
           </div>

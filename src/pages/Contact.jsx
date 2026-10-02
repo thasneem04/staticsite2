@@ -68,13 +68,13 @@ const Contact = () => {
                 <div>
                   <h4>{t("contact.locations.headOffice")}</h4>
                   <address>
-                    Auto-Control Synergy Services (ACS)
+                    {t("footer.addressName")}
                     <br />
-                    P.O. Box: 3926
+                    {t("footer.addressStreet2")}
                     <br />
-                    Dammam 34442
+                    {t("footer.addressStreet1")}
                     <br />
-                    Kingdom of Saudi Arabia
+                    {t("footer.addressCountry")}
                   </address>
                 </div>
               </div>
@@ -84,9 +84,9 @@ const Contact = () => {
                 <div>
                   <h4>{t("contact.locations.factory")}</h4>
                   <address>
-                    2nd Industrial City, Dammam
+                    {t("footer.addressStreet1")}
                     <br />
-                    Kingdom of Saudi Arabia
+                    {t("footer.addressCountry")}
                   </address>
                 </div>
               </div>

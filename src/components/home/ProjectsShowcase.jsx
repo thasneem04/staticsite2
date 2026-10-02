@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   MapPin,
-  CheckCircle2,
   Calendar,
   FileText,
   Building,
@@ -12,143 +11,11 @@ import {
 import styles from "./ProjectsShowcase.module.css";
 
 const ProjectsShowcase = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const topProjectsData = [
-    {
-      sno: "01",
-      year: "2024",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA24CA276",
-      customerSapNo: "SAP598",
-      name: "INSTALL C3/C4 REFRIGERATION UNITS AND STORAGE TANKS AT JNGLF (JUAYMAH)",
-      category: "Oil & Gas",
-      location: "Juaymah, KSA",
-      desc: "Turnkey installation, PLC automation and refrigeration control systems for C3/C4 storage tanks at Juaymah NGL Facility (JNGLF).",
-    },
-    {
-      sno: "02",
-      year: "2024 – 2025",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA24CA304",
-      customerSapNo: "SAP-0661-Jafura",
-      name: "JAFURAH DEVELOPMENT PROGRAM PHASE FRACTIONATION FACILITIES BI 10-17537II RIYAS NGL",
-      category: "Gas & NGL",
-      location: "Jafurah / Riyas, KSA",
-      desc: "Process automation, instrumentation marshalling, and control cabinet integration for the Jafurah Unconventional Gas Development Program.",
-    },
-    {
-      sno: "03",
-      year: "2024",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA24CA296",
-      customerSapNo: "SAP647",
-      name: "RTR PLANT15 AND PLANT488/493/J24 CCR RELOCATION",
-      category: "Refinery",
-      location: "Ras Tanura, KSA",
-      desc: "Central Control Room (CCR) relocation, system cutover, DCS marshalling, and loop testing for RTR Plant 15 and Plant 488/493/J24.",
-    },
-    {
-      sno: "04",
-      year: "2023",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA23CA152",
-      customerSapNo: "SAP583",
-      name: "EXPAND MARINE TERMINAL - JUAYMAH NGL FRACTIONATION PLANT -OFFSHORE PACKAGE",
-      category: "Offshore & Marine",
-      location: "Juaymah Offshore, KSA",
-      desc: "Offshore marine terminal expansion, ATEX certified control panels, remote telemetry integration, and safety shutdown systems.",
-    },
-    {
-      sno: "05",
-      year: "2023",
-      customer: "Schneider Electric Systems Saudi Arabia",
-      acsProjectNo: "SA23CA210",
-      customerSapNo: "SA10054",
-      name: "ZULUF ONSHORE OIL FACILITIES PROJECT",
-      category: "Oil & Gas",
-      location: "Zuluf Field, KSA",
-      desc: "Onshore oil processing facilities automation, power distribution boards, ESD cabinets assembly and FAT verification.",
-    },
-    {
-      sno: "06",
-      year: "2023",
-      customer: "Schneider Electric Systems Saudi Arabia Co. Ltd.",
-      acsProjectNo: "SA23CA208",
-      customerSapNo: "SA-20301",
-      name: "UPG 110 & 33 KV JUAYMAH 11.04B 4374 & 43971 NGL 011 & 012 34.5 KV",
-      category: "Power & Substation",
-      location: "Juaymah, KSA",
-      desc: "110kV and 33kV high-voltage substation upgrade, protection relay panels, and power automation for Juaymah NGL plants.",
-    },
-    {
-      sno: "07",
-      year: "2023",
-      customer: "Schneider Electric Systems Saudi Arabia Co. Ltd.",
-      acsProjectNo: "SA23CA206",
-      customerSapNo: "SA-20324",
-      name: "JUAYMAH 132/33-13.8 KV POWER TRANSFORMER (1X200MVA) REPLACEMENT FOR JUAYMAH 15 PLANT",
-      category: "Power & Substation",
-      location: "Juaymah, KSA",
-      desc: "132/33-13.8 kV 200MVA power transformer protection, control interface cabling, and testing for Juaymah 15 Plant.",
-    },
-    {
-      sno: "08",
-      year: "2023",
-      customer: "Schneider Electric Systems Saudi Arabia Co. Ltd.",
-      acsProjectNo: "SA22CA064",
-      customerSapNo: "SA20179",
-      name: "MARJAN 230/13.8KV NETWORK UPGRADE PROJECT (MCC AND SWBD)",
-      category: "Power & Substation",
-      location: "Marjan Field, KSA",
-      desc: "230/13.8kV electrical network upgrade, Motor Control Centre (MCC) interface modifications, and switchboard commissioning.",
-    },
-    {
-      sno: "09",
-      year: "2023",
-      customer: "Schneider Electric Saudi Arabia Co.Riyadh",
-      acsProjectNo: "SA22CA073",
-      customerSapNo: "Marjan Ph 2 -ksa",
-      name: "Power System Automation System – (PSA)",
-      category: "Power & Substation",
-      location: "Marjan Phase 2, KSA",
-      desc: "Complete Power System Automation (PSA) deployment, RTU telemetry integration, SCADA communication, and substation protocol testing.",
-    },
-    {
-      sno: "10",
-      year: "2024",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA22CA098",
-      customerSapNo: "SAP-000494 - King Salman",
-      name: "KING SALMAN INTERNATIONAL COMPLEX FOR Maritime Industries and Services",
-      category: "Maritime & Infrastructure",
-      location: "Ras Al-Khair, KSA",
-      desc: "Industrial automation, power management, and marine terminal control infrastructure at the King Salman Global Maritime Complex.",
-    },
-    {
-      sno: "11",
-      year: "2024",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA21CA022",
-      customerSapNo: "SAP-405 Rittal Cabinets - Marjan",
-      name: "TANAJIB OIL PLANT EXPANSION PROJECT FOR MARJAN DEVELOPMENT PROGRAM",
-      category: "Oil & Gas",
-      location: "Tanajib, KSA",
-      desc: "Rittal cabinet assembly, system staging, FAT verification, and marshaling hardware integration for the Tanajib mega-plant expansion.",
-    },
-    {
-      sno: "12",
-      year: "2024",
-      customer: "Honeywell Turki Arabia Limited",
-      acsProjectNo: "SA21CA002",
-      customerSapNo: "SAP-446",
-      name: "BERRI DOWNSTREAM PIPELINES PROJECT",
-      category: "Oil & Gas",
-      location: "Berri Field, KSA",
-      desc: "Downstream pipeline automation panels, remote RTU telemetry, valve actuation control, and field instrumentation commissioning.",
-    },
-  ];
+  const topProjectsData = t("home.projectsShowcase.tableData", { returnObjects: true });
+  const featuredCards = t("home.projectsShowcase.featuredCards", { returnObjects: true });
 
   const filteredProjects =
     activeFilter === "all"
@@ -156,7 +23,7 @@ const ProjectsShowcase = () => {
       : topProjectsData.filter(
           (p) =>
             p.customer.toLowerCase().includes(activeFilter.toLowerCase()) ||
-            p.category.toLowerCase().includes(activeFilter.toLowerCase()),
+            (p.category && p.category.toLowerCase().includes(activeFilter.toLowerCase())),
         );
 
   return (
@@ -183,28 +50,25 @@ const ProjectsShowcase = () => {
             <div className={styles.imgWrapper}>
               <img
                 src="/images/header_projects.jpg"
-                alt="Jafurah Development Program"
+                alt={featuredCards[0]?.title}
               />
               <div className={styles.overlay}></div>
             </div>
             <div className={styles.content}>
               <div className={styles.meta}>
                 <span className={styles.clientBadge}>
-                  Honeywell Turki Arabia
+                  {featuredCards[0]?.client}
                 </span>
                 <span className={styles.locationBadge}>
-                  <MapPin size={13} /> Jafurah / Riyas, KSA
+                  <MapPin size={13} /> {featuredCards[0]?.location}
                 </span>
                 <span className={styles.yearBadge}>
-                  <Calendar size={13} /> 2024 – 2025
+                  <Calendar size={13} /> {featuredCards[0]?.year}
                 </span>
               </div>
-              <h3>
-                JAFURAH DEVELOPMENT PROGRAM PHASE FRACTIONATION FACILITIES
-              </h3>
+              <h3>{featuredCards[0]?.title}</h3>
               <p>
-                ACS Project: SA24CA304 | SAP: SAP-0661-Jafura — Major
-                fractionation control cabinets and instrumentation staging.
+                {featuredCards[0]?.ref} — {featuredCards[0]?.desc}
               </p>
             </div>
           </div>
@@ -214,24 +78,23 @@ const ProjectsShowcase = () => {
             <div className={styles.imgWrapper}>
               <img
                 src="/images/electrical_hv.jpg"
-                alt="Zuluf Onshore Oil Facilities"
+                alt={featuredCards[1]?.title}
               />
               <div className={styles.overlay}></div>
             </div>
             <div className={styles.content}>
               <div className={styles.meta}>
-                <span className={styles.clientBadge}>Schneider Electric</span>
+                <span className={styles.clientBadge}>{featuredCards[1]?.client}</span>
                 <span className={styles.locationBadge}>
-                  <MapPin size={13} /> Zuluf Field, KSA
+                  <MapPin size={13} /> {featuredCards[1]?.location}
                 </span>
                 <span className={styles.yearBadge}>
-                  <Calendar size={13} /> 2023
+                  <Calendar size={13} /> {featuredCards[1]?.year}
                 </span>
               </div>
-              <h3>ZULUF ONSHORE OIL FACILITIES PROJECT</h3>
+              <h3>{featuredCards[1]?.title}</h3>
               <p>
-                ACS Project: SA23CA210 | SAP: SA10054 — ESD cabinets, power
-                boards, and system staging FAT.
+                {featuredCards[1]?.ref} — {featuredCards[1]?.desc}
               </p>
             </div>
           </div>
@@ -241,26 +104,25 @@ const ProjectsShowcase = () => {
             <div className={styles.imgWrapper}>
               <img
                 src="/images/tech_expertise.jpg"
-                alt="King Salman Maritime Complex"
+                alt={featuredCards[2]?.title}
               />
               <div className={styles.overlay}></div>
             </div>
             <div className={styles.content}>
               <div className={styles.meta}>
                 <span className={styles.clientBadge}>
-                  Honeywell Turki Arabia
+                  {featuredCards[2]?.client}
                 </span>
                 <span className={styles.locationBadge}>
-                  <MapPin size={13} /> Ras Al-Khair, KSA
+                  <MapPin size={13} /> {featuredCards[2]?.location}
                 </span>
                 <span className={styles.yearBadge}>
-                  <Calendar size={13} /> 2024
+                  <Calendar size={13} /> {featuredCards[2]?.year}
                 </span>
               </div>
-              <h3>KING SALMAN INTERNATIONAL COMPLEX FOR MARITIME INDUSTRIES</h3>
+              <h3>{featuredCards[2]?.title}</h3>
               <p>
-                ACS Project: SA22CA098 | SAP: SAP-000494 — Maritime control
-                systems & power automation.
+                {featuredCards[2]?.ref} — {featuredCards[2]?.desc}
               </p>
             </div>
           </div>
@@ -342,7 +204,7 @@ const ProjectsShowcase = () => {
         </div>
 
         <div className={styles.bottomCTA}>
-          <Link to="/projects" className={styles.primaryBtnLarge}>
+          <Link to={i18n.language === 'ar' ? '/ar/projects' : '/projects'} className={styles.primaryBtnLarge}>
             {t("home.projectsShowcase.explore")} <ArrowRight size={18} />
           </Link>
         </div>

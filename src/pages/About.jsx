@@ -15,16 +15,7 @@ import styles from "./About.module.css";
 
 const About = () => {
   const { t } = useTranslation();
-  const clients = [
-    "Saudi Aramco",
-    "Saudi Electricity Company",
-    "JHAH (John Hopkins Aramco Healthcare)",
-    "Siemens",
-    "SABIC",
-    "Petro Rabigh",
-    "Ma'aden",
-    "Tasnee",
-  ];
+  const clients = t("about.clients.list", { returnObjects: true });
 
   return (
     <div className={styles.aboutPage}>

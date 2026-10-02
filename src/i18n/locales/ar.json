@@ -57,7 +57,8 @@
       "metricEstablished": "تأسست بالمملكة العربية السعودية",
       "metricCapacity": "طاقة استيعاب المصنع",
       "metricIso": "معتمدة آيزو",
-      "metricSafety": "سجل سلامة استثنائي"
+      "metricSafety": "سجل سلامة استثنائي",
+      "metricSafetyValue": "صفر إصابات"
     },
     "companyIntro": {
       "eyebrow": "من نحن",
@@ -163,7 +164,8 @@
         "اختبار القبول المصنعي (FAT) لأكثر من 100 خزانة في آنٍ واحد",
         "امتثال كامل لمعايير IEC وNEMA وSAL",
         "فريق هندسي متكامل داخلياً — لا تعهيد خارجياً"
-      ]
+      ],
+      "fatBadge": "مُختبرة FAT في الدمام"
     },
     "electrical": {
       "eyebrow": "الكهرباء والأجهزة الميدانية",
@@ -183,6 +185,20 @@
         "أنظمة إدارة المباني (BMS)",
         "أنظمة استدعاء الممرضات",
         "أنظمة البث التلفزيوني (MATV)"
+      ],
+      "hvItems": [
+        "أعمال كابلات 13.4kV / 33kV (أرضية وهوائية)",
+        "استبدال لوحات الجهد العالي (HV)",
+        "تركيب المحطات الفرعية وتشغيلها",
+        "أنظمة الطاقة والإضاءة",
+        "أنظمة التأريض والحماية من الصواعق"
+      ],
+      "instrumentItems": [
+        "تركيب الأجهزة الميدانية والتوصيل",
+        "أنظمة التحكم الموزع (DCS)",
+        "كابلات الإشارات والتحكم",
+        "كابلات الألياف الضوئية",
+        "المعايرة والاختبار"
       ]
     },
     "projectsShowcase": {
@@ -200,7 +216,143 @@
       "acsProjectNo": "رقم مشروع ACS",
       "sapProjectNo": "رقم SAP",
       "projectName": "المشروع",
-      "explore": "تفاصيل المشروع"
+      "explore": "تفاصيل المشروع",
+      "featuredCards": [
+        {
+          "client": "Honeywell Turki Arabia",
+          "location": "جافورة / رياض النجل، المملكة العربية السعودية",
+          "year": "2024 – 2025",
+          "title": "مشروع برنامج تطوير جافورة — منشآت التجزئة",
+          "ref": "رقم مشروع ACS: SA24CA304 | SAP: SAP-0661-Jafura",
+          "desc": "تصنيع واختبار خزائن تحكم التجزئة الكبرى وتدريج أجهزة القياس والمارشالينج."
+        },
+        {
+          "client": "Schneider Electric",
+          "location": "حقل زلوف، المملكة العربية السعودية",
+          "year": "2023",
+          "title": "مشروع منشآت النفط البرية في حقل زلوف",
+          "ref": "رقم مشروع ACS: SA23CA210 | SAP: SA10054",
+          "desc": "تجميع خزائن ESD ولوحات توزيع الطاقة والاختبار المصنعي FAT."
+        },
+        {
+          "client": "Honeywell Turki Arabia",
+          "location": "رأس الخير، المملكة العربية السعودية",
+          "year": "2024",
+          "title": "مجمع الملك سلمان الدولي للصناعات البحرية",
+          "ref": "رقم مشروع ACS: SA22CA098 | SAP: SAP-000494",
+          "desc": "أتمتة المحطة البحرية وأنظمة إدارة الطاقة والبنية التحتية للتحكم."
+        }
+      ],
+      "tableData": [
+        {
+          "sno": "01",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA276",
+          "customerSapNo": "SAP598",
+          "name": "تركيب وحدات التبريد وخزانات التخزين في منشأة جويمة NGL",
+          "desc": "تركيب متكامل وأتمتة PLC وأنظمة التحكم في التبريد لخزانات C3/C4 في منشأة جويمة NGL (JNGLF)."
+        },
+        {
+          "sno": "02",
+          "year": "2024 – 2025",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA304",
+          "customerSapNo": "SAP-0661-Jafura",
+          "name": "برنامج تطوير جافورة — منشآت تجزئة رياض NGL",
+          "desc": "أتمتة العمليات ومارشالينج الأجهزة وتكامل خزائن التحكم لبرنامج الغاز غير التقليدي في جافورة."
+        },
+        {
+          "sno": "03",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA24CA296",
+          "customerSapNo": "SAP647",
+          "name": "نقل وتركيب غرفة التحكم المركزية RTR — مصانع 15 و488/493/J24",
+          "desc": "نقل غرفة التحكم المركزية (CCR) والتحويل التدريجي ومارشالينج DCS وفحص الحلقات."
+        },
+        {
+          "sno": "04",
+          "year": "2023",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA23CA152",
+          "customerSapNo": "SAP583",
+          "name": "توسعة المحطة البحرية — محطة تجزئة NGL جويمة (الحزمة البحرية)",
+          "desc": "توسعة المحطة البحرية ولوحات التحكم المعتمدة ATEX وتكامل القياس عن بُعد وأنظمة الإيقاف الآمن."
+        },
+        {
+          "sno": "05",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia",
+          "acsProjectNo": "SA23CA210",
+          "customerSapNo": "SA10054",
+          "name": "مشروع منشآت النفط البرية في حقل زلوف",
+          "desc": "أتمتة منشآت معالجة النفط البري ولوحات توزيع الطاقة وتجميع خزائن ESD واختبار FAT."
+        },
+        {
+          "sno": "06",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA23CA208",
+          "customerSapNo": "SA-20301",
+          "name": "ترقية محطة جويمة 110/33 كيلوفولت — مشاريع NGL 011 و012",
+          "desc": "ترقية محطة الجهد العالي 110/33 كيلوفولت ولوحات حماية المرحلات وأتمتة الطاقة لمصانع NGL في جويمة."
+        },
+        {
+          "sno": "07",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA23CA206",
+          "customerSapNo": "SA-20324",
+          "name": "استبدال محول الطاقة 132/33-13.8 كيلوفولت (200 MVA) في مصنع جويمة 15",
+          "desc": "حماية محول الطاقة 200MVA وكابلات واجهة التحكم والاختبار لمصنع جويمة 15."
+        },
+        {
+          "sno": "08",
+          "year": "2023",
+          "customer": "Schneider Electric Systems Saudi Arabia Co. Ltd.",
+          "acsProjectNo": "SA22CA064",
+          "customerSapNo": "SA20179",
+          "name": "مشروع ترقية شبكة مرجان الكهربائية 230/13.8 كيلوفولت",
+          "desc": "ترقية شبكة الجهد العالي 230/13.8 كيلوفولت وتعديلات واجهة MCC وتشغيل لوحة التوزيع."
+        },
+        {
+          "sno": "09",
+          "year": "2023",
+          "customer": "Schneider Electric Saudi Arabia Co. Riyadh",
+          "acsProjectNo": "SA22CA073",
+          "customerSapNo": "Marjan Ph 2",
+          "name": "نظام أتمتة منظومة الطاقة (PSA)",
+          "desc": "تنفيذ شامل لنظام أتمتة الطاقة (PSA) وتكامل RTU وتوصيل SCADA واختبار بروتوكولات المحطات."
+        },
+        {
+          "sno": "10",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA22CA098",
+          "customerSapNo": "SAP-000494",
+          "name": "مجمع الملك سلمان الدولي للصناعات والخدمات البحرية",
+          "desc": "الأتمتة الصناعية وإدارة الطاقة والبنية التحتية للتحكم في المحطة البحرية."
+        },
+        {
+          "sno": "11",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA21CA022",
+          "customerSapNo": "SAP-405",
+          "name": "مشروع توسعة مصنع النفط في تناجيب — برنامج تطوير مرجان",
+          "desc": "تجميع خزائن Rittal والتدريج واختبار FAT وتكامل أجهزة المارشالينج لتوسعة مصنع تناجيب الضخم."
+        },
+        {
+          "sno": "12",
+          "year": "2024",
+          "customer": "Honeywell Turki Arabia Limited",
+          "acsProjectNo": "SA21CA002",
+          "customerSapNo": "SAP-446",
+          "name": "مشروع خطوط أنابيب مصب حقل البري",
+          "desc": "لوحات أتمتة خطوط الأنابيب وقياس RTU عن بُعد والتحكم في تشغيل الصمامات وتشغيل أجهزة القياس الميداني."
+        }
+      ]
     },
     "panelSolutions": {
       "eyebrow": "تصنيع اللوحات",
@@ -260,6 +412,11 @@
       "title": "هل لديك مشروع يحتاج حلاً هندسياً متخصصاً؟",
       "subtitle": "فريقنا الهندسي مُستعد للاستماع إلى متطلباتك وتقديم الحل الأمثل في أقرب وقت.",
       "button": "ابدأ مشروعك الآن"
+    },
+    "clientsWall": {
+      "eyebrow": "كبار عملاؤنا وشركاؤنا",
+      "title": "ثقة المؤسسات الصناعية الكبرى",
+      "subtitle": "شركة رداء للتطوير وACS أرابيا — شريك موثوق في قطاعات النفط والغاز والطاقة والصناعة."
     }
   },
   "about": {
@@ -391,7 +548,7 @@
       "list": [
         "Saudi Aramco",
         "Saudi Electricity Company",
-        "JHAH (John Hopkins Aramco Healthcare)",
+        "JHAH (Johns Hopkins Aramco Healthcare)",
         "Siemens",
         "SABIC",
         "Petro Rabigh",

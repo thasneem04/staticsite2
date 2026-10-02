@@ -26,11 +26,9 @@ const ElectricalInstrumentation = () => {
               <div>
                 <h3>{t("home.electrical.highVoltageTitle")}</h3>
                 <ul>
-                  <li>13.4kV / 33kV Cable Works</li>
-                  <li>HV Switchgear Replacement</li>
-                  <li>Substation Installation</li>
-                  <li>Power & Lighting Systems</li>
-                  <li>Earth & Lightning Protection</li>
+                  {t("home.electrical.hvItems", { returnObjects: true }).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -42,11 +40,9 @@ const ElectricalInstrumentation = () => {
               <div>
                 <h3>{t("home.electrical.instrumentTitle")}</h3>
                 <ul>
-                  <li>Instrument Installation & Hook-up</li>
-                  <li>DCS Systems</li>
-                  <li>Signal & Control Cabling</li>
-                  <li>Fiber Optic Cabling</li>
-                  <li>Calibration & Testing</li>
+                  {t("home.electrical.instrumentItems", { returnObjects: true }).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>

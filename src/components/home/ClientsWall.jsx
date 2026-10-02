@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './ClientsWall.module.css';
 
 const ClientsWall = () => {
+  const { t } = useTranslation();
+
+  // Company/brand names are kept in English regardless of language (proper nouns)
   const majorClients = [
     "Honeywell",
     "Larsen & Toubro",
@@ -22,10 +26,10 @@ const ClientsWall = () => {
       <div className="container">
         <div className={styles.header}>
           <div className="animate-fade-up">
-            <h4 className="text-secondary">MAJOR CLIENTS & PARTNERS</h4>
-            <h2>Trusted by Leading Organizations</h2>
+            <h4 className="text-secondary">{t("home.clientsWall.eyebrow")}</h4>
+            <h2>{t("home.clientsWall.title")}</h2>
             <div className={styles.accentLine}></div>
-            <p>Redaa Developing Company & Auto Control Synergy Industrial Company — Trusted across Oil & Gas, Energy, and Process industries.</p>
+            <p>{t("home.clientsWall.subtitle")}</p>
           </div>
         </div>
 
@@ -53,4 +57,3 @@ const ClientsWall = () => {
 };
 
 export default ClientsWall;
-
