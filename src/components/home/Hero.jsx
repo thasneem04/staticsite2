@@ -14,20 +14,20 @@ const Hero = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} home-hero`}>
       <div className={styles.heroBg}></div>
       <div className={styles.heroOverlay}></div>
 
-      <div className={`container ${styles.heroContent}`}>
-        <div className={styles.textContent}>
-          <div className={`${styles.badge} animate-fade-up`}>
+      <div className={`container ${styles.heroContent} home-hero-content`}>
+        <div className={`${styles.textContent} home-hero-text`}>
+          <div className={`${styles.badge} home-hero-badge animate-fade-up`}>
             {t("home.hero.badge")}
           </div>
-          <h1 className="animate-fade-up delay-100">{t("home.hero.title")}</h1>
-          <p className={`${styles.heroDesc} animate-fade-up delay-200`}>
+          <h1 className="home-hero-title animate-fade-up delay-100">{t("home.hero.title")}</h1>
+          <p className={`${styles.heroDesc} home-hero-description animate-fade-up delay-200`}>
             {t("home.hero.desc")}
           </p>
-          <div className={`${styles.heroBtns} animate-fade-up delay-300`}>
+          <div className={`${styles.heroBtns} home-hero-buttons animate-fade-up delay-300`}>
           <Link to={i18n.language === "ar" ? "/ar/services" : "/services"} className={styles.primaryBtn}>
               {t("home.hero.explore")} <ArrowRight size={18} />
             </Link>

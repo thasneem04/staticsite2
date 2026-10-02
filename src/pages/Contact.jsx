@@ -9,7 +9,7 @@ const Contact = () => {
   const prefix = i18n.language === "ar" ? "/ar" : "";
 
   return (
-    <div className={styles.contactPage}>
+    <div className={`${styles.contactPage} responsive-contact-page`}>
       <SEO title={t("seo.contactTitle")} description={t("seo.contactDesc")} path={`${prefix}/contact`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>

@@ -13,7 +13,7 @@ const Projects = () => {
   });
 
   return (
-    <div className={styles.projectsPage}>
+    <div className={`${styles.projectsPage} responsive-projects-page`}>
       <SEO title={t("seo.projectsTitle")} description={t("seo.projectsDesc")} path={`${prefix}/projects`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>

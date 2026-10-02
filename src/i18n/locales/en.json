@@ -6,7 +6,8 @@
     "projects": "Projects",
     "contact": "Contact",
     "cta": "Get in Touch",
-    "menu": "Open navigation menu"
+    "menu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "footer": {
     "quickLinks": "Quick Links",

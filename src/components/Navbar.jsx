@@ -30,11 +30,11 @@ const Navbar = () => {
 
   return (
     <header
-      className={`${styles.header} ${isScrolled ? styles.scrolled : styles.topState}`}
+      className={`${styles.header} site-header ${isScrolled ? styles.scrolled : styles.topState}`}
     >
-      <div className={styles.headerInner}>
+      <div className={`${styles.headerInner} site-header-inner`}>
         {/* Single ACS Brand Element: Hanging banner at top -> smoothly transforms to navbar logo */}
-        <div className={styles.brandBanner}>
+        <div className={`${styles.brandBanner} site-header-brand`}>
           <Link
             to={localizedPath("/")}
             className={styles.logoLink}
@@ -49,8 +49,8 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Area */}
-        <nav className={styles.navContainer}>
-          <ul className={styles.navLinks}>
+        <nav className={`${styles.navContainer} site-header-nav`}>
+          <ul className={`${styles.navLinks} site-header-links`}>
             <li>
               <Link
                 to={localizedPath("/")}
@@ -93,15 +93,18 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className={styles.navActions}>
-            <span className={styles.desktopOnlySwitcher}><LanguageSwitcher /></span>
+          <div className={`${styles.navActions} site-header-actions`}>
+            <span className={`${styles.desktopOnlySwitcher} site-language-control`}><LanguageSwitcher /></span>
             <Link to={localizedPath("/contact")} className={styles.ctaButton}>
               {t("nav.cta")}
             </Link>
             <button
-              className={styles.mobileToggle}
+              type="button"
+              className={`${styles.mobileToggle} site-header-menu-toggle`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={t("nav.menu")}
+              aria-label={isMobileMenuOpen ? t("nav.closeMenu") : t("nav.menu")}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
@@ -111,9 +114,11 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`${styles.mobileDrawer} ${isMobileMenuOpen ? styles.mobileOpen : ""}`}
+        id="mobile-navigation"
+        aria-hidden={!isMobileMenuOpen}
+        className={`${styles.mobileDrawer} site-header-mobile-drawer ${isMobileMenuOpen ? `${styles.mobileOpen} site-mobile-open` : ""}`}
       >
-        <ul className={styles.mobileNavLinks}>
+        <ul className={`${styles.mobileNavLinks} site-mobile-links`}>
           <li>
             <Link
               to={localizedPath("/")}

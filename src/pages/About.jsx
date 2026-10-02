@@ -21,7 +21,7 @@ const About = () => {
   const parentCompanyCards = t("about.parentCompany.cards", { returnObjects: true });
 
   return (
-    <div className={styles.aboutPage}>
+    <div className={`${styles.aboutPage} responsive-about-page`}>
       <SEO title={t("seo.aboutTitle")} description={t("seo.aboutDesc")} path={`${prefix}/about`} />
       {/* Page Header with Background Image */}
       <div className={styles.pageHeader}>
