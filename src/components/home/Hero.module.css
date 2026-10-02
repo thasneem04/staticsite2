@@ -12,7 +12,7 @@
 .heroBg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/hero_grand.jpg');
+  background-image: url("/images/hero_grand.jpg");
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
@@ -21,16 +21,20 @@
 }
 
 @keyframes subtleZoom {
-  0% { transform: scale(1.02); }
-  100% { transform: scale(1.08); }
+  0% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.08);
+  }
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    90deg, 
-    rgba(6, 40, 28, 0.95) 0%, 
+    90deg,
+    rgba(6, 40, 28, 0.95) 0%,
     rgba(11, 74, 54, 0.8) 50%,
     rgba(11, 74, 54, 0.3) 100%
   );
@@ -74,7 +78,7 @@
   font-size: 1.25rem !important;
   max-width: 650px;
   margin-bottom: 40px;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heroBtns {
@@ -84,7 +88,8 @@
   margin-bottom: 50px;
 }
 
-.primaryBtn, .secondaryBtn {
+.primaryBtn,
+.secondaryBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -178,22 +183,24 @@
 
 .scrollIndicator {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  width: 42px;
+  height: 52px;
 }
 
 .mouse {
   width: 26px;
   height: 44px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   position: relative;
+  margin: 0 auto;
 }
 
 .wheel {
@@ -202,15 +209,21 @@
   background-color: white;
   border-radius: 2px;
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 50%;
   transform: translateX(-50%);
   animation: scroll 1.5s infinite;
 }
 
 @keyframes scroll {
-  0% { transform: translate(-50%, 0); opacity: 1; }
-  100% { transform: translate(-50%, 15px); opacity: 0; }
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 15px);
+    opacity: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -233,8 +246,8 @@
   }
   .heroOverlay {
     background: linear-gradient(
-      180deg, 
-      rgba(6, 40, 28, 0.75) 0%, 
+      180deg,
+      rgba(6, 40, 28, 0.75) 0%,
       rgba(11, 74, 54, 0.98) 100%
     );
   }
@@ -245,8 +258,8 @@
     flex-direction: column;
     margin-bottom: 30px;
   }
-  .primaryBtn, .secondaryBtn {
+  .primaryBtn,
+  .secondaryBtn {
     width: 100%;
   }
 }
-
