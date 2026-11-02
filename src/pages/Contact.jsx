@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Building2, Factory } from "lucide-react";
 import styles from "./Contact.module.css";
 import SEO from "../components/SEO";
+import PhoneLink from "../components/PhoneLink";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
@@ -56,9 +57,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>{t("contact.form.subject")}</h4>
-                  <a href="tel:+966564305884">+966 56430 5884</a>
+                  <PhoneLink number="+966564305884" display="+966 56430 5884" />
                   <br />
-                  <a href="tel:+966138167077">+966 13 816 7077</a>
+                  <PhoneLink number="+966138167077" display="+966 13 816 7077" />
                 </div>
               </div>
             </div>

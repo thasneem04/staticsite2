@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Award } from "lucide-react";
+import PhoneLink from "./PhoneLink";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -103,11 +104,11 @@ const Footer = () => {
           </div>
           <div className={styles.contactItem}>
             <Phone size={18} />
-            <a href="tel:+966564305884">+966 56 430 5884</a>
+            <PhoneLink number="+966564305884" display="+966 56 430 5884" />
           </div>
           <div className={styles.contactItem}>
             <Phone size={18} />
-            <a href="tel:+966138167077">+966 13 816 7077</a>
+            <PhoneLink number="+966138167077" display="+966 13 816 7077" />
           </div>
         </div>
       </div>
