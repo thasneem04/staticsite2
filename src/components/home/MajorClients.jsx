@@ -59,17 +59,17 @@ const APPROVALS = [
   { name: 'MODON',           logoUrl: null,         color: '#00558B' },
   { name: 'Baker Hughes',    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Baker_Hughes_Logo.svg', color: '#CC0000' },
   { name: 'Schlumberger',    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Schlumberger_logo.svg', color: '#009DDC' },
-  { name: 'Halliburton',     logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Halliburton_logo.svg', color: '#E31837' },
-  { name: 'Air Products',    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Air_Products_and_Chemicals_logo.svg', color: '#003087' },
+  { name: 'Halliburton',     logoUrl: '/images/logos/brands/halliburton.png', color: '#E31837' },
+  { name: 'Air Products',    logoUrl: '/images/logos/brands/air-products.png', color: '#003087' },
 ];
 
 const SUPPLIERS = [
   { name: 'SIEMENS',          logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg',             color: '#009999' },
   { name: 'ABB',              logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/00/ABB_logo.svg',                 color: '#FF000F' },
-  { name: 'Allen-Bradley',    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/30/Allen-Bradley_logo.svg',       color: '#E2001A' },
-  { name: 'Rockwell Automation', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Rockwell_Automation_logo.svg', color: '#E2001A' },
+  { name: 'Allen-Bradley',    logoUrl: '/images/logos/brands/allen-bradley.png',       color: '#E2001A' },
+  { name: 'Rockwell Automation', logoUrl: '/images/logos/brands/rockwell-automation.png', color: '#E2001A' },
   { name: 'Omni®',            logoUrl: null,             color: '#D31245' },
-  { name: 'Weidmüller',       logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Weidm%C3%BCller_Logo.svg',     color: '#F08B1D' },
+  { name: 'Weidmüller',       logoUrl: '/images/logos/brands/weidmuller.png',     color: '#F08B1D' },
   { name: 'PHOENIX CONTACT',  logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Phoenix_Contact_logo.svg',     color: '#000000' },
   { name: 'TRINITY',          logoUrl: null,             color: '#1B3F8B' },
   { name: 'Schneider Electric',logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Schneider_Electric_2007.svg', color: '#3DCD58' },
