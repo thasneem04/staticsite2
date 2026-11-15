@@ -36,7 +36,7 @@ const LogoCard = ({ name, logoUrl, sub, color, isLastRow }) => {
    Data — company/brand names are proper nouns, stay in English
 ────────────────────────────────────────────────────────────── */
 const MAJOR_CLIENTS = [
-  { name: 'Honeywell',        logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Honeywell_logo.svg',      color: '#FC2B19' },
+  { name: 'Honeywell',        logoUrl: '/images/logos/brands/honeywell.png',      color: '#FC2B19' },
   { name: 'Schneider Electric', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Schneider_Electric_2007.svg', color: '#3DCD58' },
   { name: 'Alderley',         logoUrl: null,        color: '#0061A0' },
   { name: 'Dräger',           logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Dr%C3%A4ger_Logo.svg',   color: '#003087' },
