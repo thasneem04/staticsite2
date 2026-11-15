@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Building2, Factory } from "lucide-react";
 import styles from "./Contact.module.css";
 import SEO from "../components/SEO";
 import PhoneLink from "../components/PhoneLink";
 
+// FormSubmit emails every enquiry to this inbox. The very first submission sends a
+// one-time activation link to the inbox; enquiries are delivered once it is clicked.
+const ENQUIRY_ENDPOINT = "https://formsubmit.co/ajax/RM@acsarabia.com";
+
 const Contact = () => {
   const { t, i18n } = useTranslation();
   const prefix = i18n.language === "ar" ? "/ar" : "";
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+    if (data.botcheck) return; // honeypot filled in: silently drop spam bots
+
+    setStatus("sending");
+    try {
+      const res = await fetch(ENQUIRY_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `New website enquiry: ${data.subject}`,
+          _template: "table",
+          _captcha: "false",
+          name: data.name,
+          email: data.email, // FormSubmit uses this as the reply-to address
+          "Inquiry Type": data.subject,
+          message: data.message,
+          "Site Language": i18n.language === "ar" ? "Arabic" : "English",
+        }),
+      });
+      const result = await res.json();
+      // FormSubmit returns success as the string "true"
+      if (!res.ok || String(result.success) !== "true") throw new Error(result.message);
+      form.reset();
+      setStatus("success");
+    } catch (err) {
+      console.error("Enquiry could not be sent:", err);
+      setStatus("error");
+    }
+  };
 
   return (
     <div className={`${styles.contactPage} responsive-contact-page`}>
@@ -108,15 +146,23 @@ const Contact = () => {
             <h3>{t("contact.form.title")}</h3>
             <p className={styles.formSubtitle}>{t("contact.form.subtitle")}</p>
 
-            <form
-              className={styles.contactForm}
-              onSubmit={(e) => e.preventDefault()}
-            >
+            <form className={styles.contactForm} onSubmit={handleSubmit}>
+              {/* Honeypot: hidden from people, bots fill it in */}
+              <input
+                type="checkbox"
+                name="botcheck"
+                className={styles.honeypot}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
+
               <div className={styles.formGroup}>
                 <label htmlFor="name">{t("contact.form.name")}</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder={t("contact.form.namePlaceholder")}
                   required
                 />
@@ -127,6 +173,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   dir="ltr"
                   placeholder={t("contact.form.emailPlaceholder")}
                   required
@@ -138,6 +185,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   placeholder={t("contact.form.subjectPlaceholder")}
                   required
                 />
@@ -147,15 +195,37 @@ const Contact = () => {
                 <label htmlFor="message">{t("contact.form.message")}</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="5"
                   placeholder={t("contact.form.messagePlaceholder")}
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" className={styles.submitBtn}>
-                {t("contact.form.submit")}
+              <button
+                type="submit"
+                className={styles.submitBtn}
+                disabled={status === "sending"}
+              >
+                {status === "sending"
+                  ? t("contact.form.sending")
+                  : t("contact.form.submit")}
               </button>
+
+              <p
+                role="status"
+                aria-live="polite"
+                className={`${styles.formStatus} ${
+                  status === "success"
+                    ? styles.formStatusSuccess
+                    : status === "error"
+                      ? styles.formStatusError
+                      : ""
+                }`}
+              >
+                {status === "success" && t("contact.form.success")}
+                {status === "error" && t("contact.form.error")}
+              </p>
             </form>
           </div>
         </div>

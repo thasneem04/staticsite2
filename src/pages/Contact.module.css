@@ -217,6 +217,41 @@
   transform: translateY(-2px);
 }
 
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
+.honeypot {
+  display: none;
+}
+
+.formStatus {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.formStatusSuccess,
+.formStatusError {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.formStatusSuccess {
+  background-color: rgba(11, 74, 54, 0.08);
+  border: 1px solid rgba(11, 74, 54, 0.25);
+  color: var(--primary-color);
+}
+
+.formStatusError {
+  background-color: rgba(196, 30, 36, 0.06);
+  border: 1px solid rgba(196, 30, 36, 0.25);
+  color: var(--secondary-color);
+}
+
 /* Slogan & Trust Section */
 .sloganSection {
   background-color: #061c14;
