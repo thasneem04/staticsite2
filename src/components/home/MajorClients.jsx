@@ -47,10 +47,10 @@ const MAJOR_CLIENTS = [
 ];
 
 const APPROVALS = [
-  { name: 'Saudi Aramco',    logoUrl: 'https://upload.wikimedia.org/wikipedia/en/2/23/Saudi_Aramco_logo.svg',       color: '#006000' },
+  { name: 'Saudi Aramco',    logoUrl: '/images/logos/brands/aramco.png',       color: '#006000' },
   { name: 'SABIC',           logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/15/SABIC_Logo.svg',        color: '#005E9D' },
   { name: 'MARAFIQ',         logoUrl: '/images/logos/brands/marafiq.png',         color: '#006837' },
-  { name: "MA'ADEN",         logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Ma%27aden_Logo.svg',    color: '#C8102E' },
+  { name: "MA'ADEN",         logoUrl: '/images/logos/brands/maaden.png',    color: '#C8102E' },
   { name: 'SADARA',          logoUrl: null,         color: '#003478' },
   { name: 'Saudi Energy',    logoUrl: null,         color: '#00843D' },
   { name: 'NWC',             logoUrl: '/images/logos/brands/nwc.png',         color: '#005DAA' },
