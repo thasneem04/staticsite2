@@ -499,6 +499,13 @@ html[dir="rtl"] h6 {
   line-height: 1.35;
 }
 
+/* Safari (iPhone/Mac) applies letter-spacing to Arabic and pulls the joined letters
+   apart; Chrome ignores it. Keep spacing at 0 on every Arabic-page element —
+   !important so it also beats the inline letterSpacing styles on eyebrow labels. */
+html[dir="rtl"] body * {
+  letter-spacing: 0 !important;
+}
+
 /* Arabic paragraphs: slightly more line height for readability */
 html[dir="rtl"] p {
   font-family: "IBM Plex Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
