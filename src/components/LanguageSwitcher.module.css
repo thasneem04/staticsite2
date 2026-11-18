@@ -16,9 +16,10 @@
 }
 
 .switcherBtn:hover {
-  background: rgba(11, 74, 54, 0.06);
-  border-color: rgba(11, 74, 54, 0.3);
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+  color: #ffffff;
+  background: #0b4a36;
+  border-color: #0b4a36;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.18);
 }
 
 .switcherBtn:focus-visible {

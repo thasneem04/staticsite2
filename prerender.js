@@ -28,8 +28,10 @@ app.use((req, res) => {
   res.send(originalIndex);
 });
 
-const PORT = 3000;
-const server = app.listen(PORT, async () => {
+// Port 0 lets the OS pick any free port, so another app on a fixed port (e.g. 3000)
+// can't hijack the pages; 127.0.0.1 avoids "localhost" resolving to a different server.
+const server = app.listen(0, '127.0.0.1', async () => {
+  const PORT = server.address().port;
   console.log(`Server started on port ${PORT} for prerendering...`);
   
   try {
@@ -37,7 +39,7 @@ const server = app.listen(PORT, async () => {
     
     for (const route of routes) {
       const page = await browser.newPage();
-      await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'domcontentloaded' });
+      await page.goto(`http://127.0.0.1:${PORT}${route}`, { waitUntil: 'domcontentloaded' });
       await page.waitForSelector('#root > *');
       
       const html = await page.content();
